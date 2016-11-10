@@ -15,7 +15,17 @@
   src: url(../files/edo.ttf);
 }
 
+@mixin hr {
+  height: 1px;
+  width: 5em;
+  background-color: #000;
+}
+
+
 @media (min-width: 320px) {
+  .navbar {
+    margin-bottom: 0;
+  }
   .main {
     background-image: url(../img/small-dog.jpg);
     background-position: center;
@@ -36,13 +46,13 @@
   }
 
   #map {
-    height: 610px;
+    height: 410px;
     width: 100%;
     z-index: -1;
   }
 
   .contact-header {
-    margin-top: -600px;
+    margin-top: -400px;
     padding: 4em 0 3
   }
 
@@ -58,63 +68,19 @@
     .larger-box {
       @include flexbox;
       @include flexbox-center;
-      height: 20em;
-      background-color: grey;
-      width: 75%;
+      height: 27em;
+      background-color: silver;
+      width: 80%;
       margin-bottom: 4em;
       z-index: -999999;
       .inner-box {
         background-color: white;
-        height:18em;
-        width:68%;
-        z-index: 99999;
-      }
-    }
-  }
-}
-
-@media (min-width: 568px) {
-
-}
-
-@media (min-width: 667px) {
-
-}
-
-@media (min-width: 736px) {
-
-}
-
-@media (min-width: 822px) {
-  .main {
-    background-image: url(../img/dog.jpg);
-    height: 100vh;
-    h1 {
-      margin-bottom: 5em;
-    }
-
-    h1, h2 {
-      font-size: 6em;
-    }
-  }
-
-  .about-us-info {
-    justify-content: space-around;
-    .larger-box {
-      @include flexbox;
-      @include flexbox-center;
-      height: 24em;
-      background-color: grey;
-      width: 20%;
-      margin-bottom: 4em;
-      z-index: -999999;
-      .inner-box {
-        background-color: white;
-        height:22em;
+        height:25em;
+        padding: 1em 0.5em 1em 0.5em;
         width:90%;
-        z-index: 99999;
         img {
           margin: auto;
+          padding-bottom: 1em;
         }
         p {
           text-align: center;
@@ -122,10 +88,147 @@
       }
     }
   }
+
+  footer {
+    #contact h1, .links {
+    color: white;
+    text-align: center;
+    }
+    hr {
+      @include hr;
+    }
+    #contactform {
+      margin: auto;
+      width: 80%;
+      input {
+        margin-bottom: 1em;
+      }
+    }
+  }
 }
 
-@media (min-width: 1022px) {
+@media (min-width: 375px) {
+  .about-us-info {
+    .larger-box {
+      height: 25em;
+      .inner-box {
+        height: 23em;
+      }
+    }
+  }
+}
 
+@media (min-width: 410px) {
+  .main {
+    height: 55vh;
+  }
+
+  .about-us-info {
+    .larger-box {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 568px) {
+  .main {
+    height: 90vh;
+    h1 {
+      margin-bottom: 3em;
+    }
+    h1, h2 {
+      font-size: 2em;
+    }
+  }
+
+  .about-us-info {
+    justify-content: space-around;
+    .larger-box {
+      width: 32%;
+      height: 32em;
+      .inner-box {
+        height: 30em;
+      }
+    }
+  }
+}
+
+@media (min-width: 667px) {
+  .main {
+    background-image: url(../img/dog.jpg);
+    background-size: cover;
+    height: 90vh;
+    h1 {
+      margin-bottom: 3em;
+    }
+    h1, h2 {
+      font-size: 2em;
+    }
+  }
+
+  .about-us-info {
+    .larger-box {
+      width: 30%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: 100vh;
+    h1 {
+      margin-bottom: 5em;
+    }
+    h1, h2 {
+      font-size: 4em;
+    }
+  }
+  .about-us-info {
+    .larger-box {
+      height: 29em;
+      .inner-box {
+        height: 27em;
+      }
+    }
+  }
+}
+
+@media (min-width: 822px) {
+  .main {
+    height: 100vh;
+    h1, h2 {
+      font-size: 5em;
+    }
+  }
+
+  #map {
+    height: 610px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .contact-header {
+    margin-top: -600px;
+    padding: 4em 0 3
+  }
+
+  .about-us-info {
+    .larger-box {
+      width: 26%;
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+  .about-us-info {
+    .larger-box {
+      .inner-box {
+        img {
+          padding-bottom: 2em;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1272px) {

@@ -4,18 +4,26 @@
 }
 
 @media (min-width: 320px) {
+  .navbar {
+    margin-bottom: 0;
+  }
   .main {
     background-image: url(../img/small-dog.jpg);
     background-position: center;
     height: 60vh;
     width: auto;
-    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main h1 {
     margin-bottom: 1em;
@@ -27,6 +35,164 @@
     text-align: center;
   }
   #map {
+    height: 410px;
+    width: 100%;
+    z-index: -1;
+  }
+  .contact-header {
+    margin-top: -400px;
+    padding: 4em 0 3;
+  }
+  .about-us h1 {
+    text-align: center;
+    margin: 2em 0 2em 0;
+  }
+  .about-us-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .about-us-info .larger-box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 27em;
+    background-color: silver;
+    width: 80%;
+    margin-bottom: 4em;
+    z-index: -999999;
+  }
+  .about-us-info .larger-box .inner-box {
+    background-color: white;
+    height: 25em;
+    padding: 1em 0.5em 1em 0.5em;
+    width: 90%;
+  }
+  .about-us-info .larger-box .inner-box img {
+    margin: auto;
+    padding-bottom: 1em;
+  }
+  .about-us-info .larger-box .inner-box p {
+    text-align: center;
+  }
+  footer #contact h1, footer .links {
+    color: white;
+    text-align: center;
+  }
+  footer hr {
+    height: 1px;
+    width: 5em;
+    background-color: #000;
+  }
+  footer #contactform {
+    margin: auto;
+    width: 80%;
+  }
+  footer #contactform input {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 375px) {
+  .about-us-info .larger-box {
+    height: 25em;
+  }
+  .about-us-info .larger-box .inner-box {
+    height: 23em;
+  }
+}
+
+@media (min-width: 410px) {
+  .main {
+    height: 55vh;
+  }
+  .about-us-info .larger-box {
+    width: 70%;
+  }
+}
+
+@media (min-width: 568px) {
+  .main {
+    height: 90vh;
+  }
+  .main h1 {
+    margin-bottom: 3em;
+  }
+  .main h1, .main h2 {
+    font-size: 2em;
+  }
+  .about-us-info {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .about-us-info .larger-box {
+    width: 32%;
+    height: 32em;
+  }
+  .about-us-info .larger-box .inner-box {
+    height: 30em;
+  }
+}
+
+@media (min-width: 667px) {
+  .main {
+    background-image: url(../img/dog.jpg);
+    background-size: cover;
+    height: 90vh;
+  }
+  .main h1 {
+    margin-bottom: 3em;
+  }
+  .main h1, .main h2 {
+    font-size: 2em;
+  }
+  .about-us-info .larger-box {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: 100vh;
+  }
+  .main h1 {
+    margin-bottom: 5em;
+  }
+  .main h1, .main h2 {
+    font-size: 4em;
+  }
+  .about-us-info .larger-box {
+    height: 29em;
+  }
+  .about-us-info .larger-box .inner-box {
+    height: 27em;
+  }
+}
+
+@media (min-width: 822px) {
+  .main {
+    height: 100vh;
+  }
+  .main h1, .main h2 {
+    font-size: 5em;
+  }
+  #map {
     height: 610px;
     width: 100%;
     z-index: -1;
@@ -35,77 +201,13 @@
     margin-top: -600px;
     padding: 4em 0 3;
   }
-  .about-us h1 {
-    text-align: center;
-    margin: 2em 0 2em 0;
-  }
-  .about-us-info {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   .about-us-info .larger-box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20em;
-    background-color: grey;
-    width: 75%;
-    margin-bottom: 4em;
-    z-index: -999999;
-  }
-  .about-us-info .larger-box .inner-box {
-    background-color: white;
-    height: 18em;
-    width: 68%;
-    z-index: 99999;
+    width: 26%;
   }
 }
 
-@media (min-width: 822px) {
-  .main {
-    background-image: url(../img/dog.jpg);
-    height: 100vh;
-  }
-  .main h1 {
-    margin-bottom: 5em;
-  }
-  .main h1, .main h2 {
-    font-size: 6em;
-  }
-  .about-us-info {
-    justify-content: space-around;
-  }
-  .about-us-info .larger-box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 24em;
-    background-color: grey;
-    width: 20%;
-    margin-bottom: 4em;
-    z-index: -999999;
-  }
-  .about-us-info .larger-box .inner-box {
-    background-color: white;
-    height: 22em;
-    width: 90%;
-    z-index: 99999;
-  }
+@media (min-width: 1020px) {
   .about-us-info .larger-box .inner-box img {
-    margin: auto;
-  }
-  .about-us-info .larger-box .inner-box p {
-    text-align: center;
+    padding-bottom: 2em;
   }
 }
