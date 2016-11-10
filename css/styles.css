@@ -85,9 +85,9 @@
   }
   .about-us-info .larger-box .inner-box img {
     margin: auto;
-    padding-bottom: 1em;
   }
   .about-us-info .larger-box .inner-box p {
+    margin-top: 1em;
     text-align: center;
   }
   footer #contact h1, footer .links {
@@ -207,7 +207,7 @@
 }
 
 @media (min-width: 1020px) {
-  .about-us-info .larger-box .inner-box img {
-    padding-bottom: 2em;
+  .about-us-info .larger-box .inner-box p {
+    margin-top: 2em;
   }
 }
