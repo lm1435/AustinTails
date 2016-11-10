@@ -6,10 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<title>COMPANY NAME</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar ">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -23,7 +23,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="#">Link</a></li>
             <li><a href="#">Link2</a></li>
@@ -32,23 +32,81 @@
       </div><!-- /.container-fluid -->
     </nav>
 		<div class="total-body" id="container">
-			<section class="hero-image">
-
+			<section class="main">
+        <h1>Austin Tails??</h1>
+        <h2>Experienced dog walker</h2>
 			</section>
-			<section class="about-page">
+			<section class="about-us">
+        <h1>About us</h1>
+        <div class="about-us-info">
 
+          <div class="larger-box">
+            <div class="inner-box">
+              <img src="img/me.jpg" class="img-circle img-responsive" alt="me" />
+              <p>
+                Puppy kitty ipsum dolor sit good dog vitamins string leash cockatiel turtle buddy. Warm food pet food cockatiel meow litter whiskers maine coon cat parakeet. Aquarium Fido pet supplies good boy bedding kibble scratcher grooming vaccine right paw roll over kibble maine coon cat. Furry smooshy lazy cat cage chew nest chirp.
+              </p>
+            </div>
+          </div>
+          <div class="larger-box">
+            <div class="inner-box">
+              <img src="img/me.jpg" class="img-circle img-responsive" alt="me" />
+              <p>
+                Puppy kitty ipsum dolor sit good dog vitamins string leash cockatiel turtle buddy. Warm food pet food cockatiel meow litter whiskers maine coon cat parakeet. Aquarium Fido pet supplies good boy bedding kibble scratcher grooming vaccine right paw roll over kibble maine coon cat. Furry smooshy lazy cat cage chew nest chirp.
+              </p>
+            </div>
+          </div>
+          <div class="larger-box">
+            <div class="inner-box">
+              <img src="img/me.jpg" class="img-circle img-responsive" alt="me" />
+              <p>
+                Puppy kitty ipsum dolor sit good dog vitamins string leash cockatiel turtle buddy. Warm food pet food cockatiel meow litter whiskers maine coon cat parakeet. Aquarium Fido pet supplies good boy bedding kibble scratcher grooming vaccine right paw roll over kibble maine coon cat. Furry smooshy lazy cat cage chew nest chirp.
+              </p>
+            </div>
+          </div>
+        </div>
 			</section>
 			<section class="container-fluid" id="projects">
 
 			</section>
 			<footer>
-
+				<div id="map"></div>
+				<div class="contact-header" id="contact">
+					<h1>
+						CONTACT
+					</h1>
+					<hr>
+				</div>
+				<div class="form">
+					<form name="form" method="POST" id="contactform">
+						<input type="hidden" name="_next" value="http://luismeza.io/thanks.html">
+						<input type="hidden" name="_subject" value="luismeza.io contact form">
+						<input type="text" name="_gotcha" style="display:none">
+						<input type="text" minlength="4" placeholder="Your Name" name="name" class="form-control" id="name">
+						<input required type="email" name="_replyto" minlength="5" placeholder="Your Email" class="form-control" id="email">
+						<textarea required minlength="15" style="resize:none" cols="40" rows="5" class="form-control" placeholder="Hey, you're awesome I want to hire you!"  name="message" id="message-box"></textarea>
+						<button type="submit" class="btn btn-success" name="submit" id="submit">
+						</button>
+					</form>
+				</div>
+				<div class="links">
+					<div class="copyright">
+						&copy; COMPANY NAME
+					</div>
+					<div>
+            SOCIAL MEDIA
+          </div>
+				</div>
 			</footer>
 		</div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    </script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
 		</script>
 		<script src="js/scripts.js">
 		</script>
-		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBTrU385JEG0U34jqMWkfh0qBjFf4HJ208&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYseTjRJO4rRgHXICjvx8G8-UcDNnPqs&callback=initMap"
+    async defer>
+    </script>
 	</body>
 </html>

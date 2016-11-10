@@ -1,0 +1,141 @@
+@mixin flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flexbox-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: home;
+  src: url(../files/edo.ttf);
+}
+
+@media (min-width: 320px) {
+  .main {
+    background-image: url(../img/small-dog.jpg);
+    background-position: center;
+    height: 60vh;
+    width: auto;
+    @include flexbox;
+    flex-direction: column;
+    @include flexbox-center;
+    h1 {
+      margin-bottom: 1em;
+    }
+    h1, h2 {
+      color: white;
+      font-size: 3em;
+      font-family: home;
+      text-align: center;
+    }
+  }
+
+  #map {
+    height: 610px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .contact-header {
+    margin-top: -600px;
+    padding: 4em 0 3
+  }
+
+  .about-us h1 {
+    text-align: center;
+    margin: 2em 0 2em 0;
+  }
+
+  .about-us-info {
+    @include flexbox;
+    @include flexbox-center;
+    flex-wrap: wrap;
+    .larger-box {
+      @include flexbox;
+      @include flexbox-center;
+      height: 20em;
+      background-color: grey;
+      width: 75%;
+      margin-bottom: 4em;
+      z-index: -999999;
+      .inner-box {
+        background-color: white;
+        height:18em;
+        width:68%;
+        z-index: 99999;
+      }
+    }
+  }
+}
+
+@media (min-width: 568px) {
+
+}
+
+@media (min-width: 667px) {
+
+}
+
+@media (min-width: 736px) {
+
+}
+
+@media (min-width: 822px) {
+  .main {
+    background-image: url(../img/dog.jpg);
+    height: 100vh;
+    h1 {
+      margin-bottom: 5em;
+    }
+
+    h1, h2 {
+      font-size: 6em;
+    }
+  }
+
+  .about-us-info {
+    justify-content: space-around;
+    .larger-box {
+      @include flexbox;
+      @include flexbox-center;
+      height: 24em;
+      background-color: grey;
+      width: 20%;
+      margin-bottom: 4em;
+      z-index: -999999;
+      .inner-box {
+        background-color: white;
+        height:22em;
+        width:90%;
+        z-index: 99999;
+        img {
+          margin: auto;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1022px) {
+
+}
+
+@media (min-width: 1272px) {
+
+}
+
+@media (min-width: 1356px) {
+
+}
+
+@media (min-width: 1420px) {
+
+}
