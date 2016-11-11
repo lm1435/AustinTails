@@ -97,6 +97,9 @@
       .dog-walking, .dog-sitting, .cat-sitting {
         text-align: center;
         width: 51%;
+        img {
+          margin: auto;
+        }
         hr {
           @include hr;
         }
@@ -111,6 +114,9 @@
       .pet-taxi, .catercise, .pet-portraits {
         text-align: center;
         width: 51%;
+        img {
+          margin: auto;
+        }
         hr {
           @include hr;
         }
