@@ -45,17 +45,6 @@
     }
   }
 
-  #map {
-    height: 410px;
-    width: 100%;
-    z-index: -1;
-  }
-
-  .contact-header {
-    margin-top: -400px;
-    padding: 4em 0 3
-  }
-
   .about-us h1 {
     text-align: center;
     margin: 2em 0 2em 0;
@@ -86,6 +75,28 @@
           text-align: center;
         }
       }
+    }
+
+    .top-row-services {
+      @include flexbox;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
+      .dog-walking, .dog-sitting, .cat-sitting {
+        text-align: center;
+        width: 51%;
+      }
+    }
+
+    #map {
+      height: 410px;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .contact-header {
+      margin-top: -400px;
+      padding: 4em 0 3
     }
   }
 
@@ -185,9 +196,9 @@
   }
   .about-us-info {
     .larger-box {
-      height: 29em;
+      height: 45vh;
       .inner-box {
-        height: 27em;
+        height: 90%;
       }
     }
   }
@@ -210,12 +221,6 @@
   .contact-header {
     margin-top: -600px;
     padding: 4em 0 3
-  }
-
-  .about-us-info {
-    .larger-box {
-      width: 26%;
-    }
   }
 }
 

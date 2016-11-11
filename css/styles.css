@@ -34,15 +34,6 @@
     font-family: home;
     text-align: center;
   }
-  #map {
-    height: 410px;
-    width: 100%;
-    z-index: -1;
-  }
-  .contact-header {
-    margin-top: -400px;
-    padding: 4em 0 3;
-  }
   .about-us h1 {
     text-align: center;
     margin: 2em 0 2em 0;
@@ -89,6 +80,31 @@
   .about-us-info .larger-box .inner-box p {
     margin-top: 1em;
     text-align: center;
+  }
+  .about-us-info .top-row-services {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .about-us-info .top-row-services .dog-walking, .about-us-info .top-row-services .dog-sitting, .about-us-info .top-row-services .cat-sitting {
+    text-align: center;
+    width: 51%;
+  }
+  .about-us-info #map {
+    height: 410px;
+    width: 100%;
+    z-index: -1;
+  }
+  .about-us-info .contact-header {
+    margin-top: -400px;
+    padding: 4em 0 3;
   }
   footer #contact h1, footer .links {
     color: white;
@@ -178,10 +194,10 @@
     font-size: 4em;
   }
   .about-us-info .larger-box {
-    height: 29em;
+    height: 45vh;
   }
   .about-us-info .larger-box .inner-box {
-    height: 27em;
+    height: 90%;
   }
 }
 
@@ -200,9 +216,6 @@
   .contact-header {
     margin-top: -600px;
     padding: 4em 0 3;
-  }
-  .about-us-info .larger-box {
-    width: 26%;
   }
 }
 
