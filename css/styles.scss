@@ -5,6 +5,12 @@
   display: flex;
 }
 
+@mixin flex-wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
 @mixin flexbox-center {
   align-items: center;
   justify-content: center;
@@ -53,7 +59,7 @@
   .about-us-info {
     @include flexbox;
     @include flexbox-center;
-    flex-wrap: wrap;
+    @include flex-wrap;
     .larger-box {
       @include flexbox;
       @include flexbox-center;
@@ -70,24 +76,50 @@
         img {
           margin: auto;
         }
+        h3 {
+          text-align: center;
+        }
         p {
           margin-top: 1em;
           text-align: center;
         }
       }
     }
-
+  }
+  .services {
+    h1 {
+      text-align: center;
+    }
     .top-row-services {
       @include flexbox;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: auto;
+      @include flex-wrap;
+      justify-content: space-around;
       .dog-walking, .dog-sitting, .cat-sitting {
         text-align: center;
         width: 51%;
+        hr {
+          @include hr;
+        }
       }
     }
 
+    .bottom-row-services {
+      @include flexbox;
+      @include flex-wrap;
+      justify-content: space-around;
+      margin-bottom: 2em;
+      .pet-taxi, .catercise, .pet-portraits {
+        text-align: center;
+        width: 51%;
+        hr {
+          @include hr;
+        }
+      }
+    }
+  }
+
+
+  footer {
     #map {
       height: 410px;
       width: 100%;
@@ -98,9 +130,7 @@
       margin-top: -400px;
       padding: 4em 0 3
     }
-  }
 
-  footer {
     #contact h1, .links {
     color: white;
     text-align: center;
@@ -108,6 +138,7 @@
     hr {
       @include hr;
     }
+
     #contactform {
       margin: auto;
       width: 80%;
@@ -159,6 +190,19 @@
       height: 32em;
       .inner-box {
         height: 30em;
+      }
+    }
+  }
+  .services {
+    .top-row-services {
+      .dog-walking, .dog-sitting, .cat-sitting {
+        width: 25%;
+      }
+    }
+
+    .bottom-row-services {
+      .pet-taxi, .catercise, .pet-portraits {
+        width: 25%;
       }
     }
   }

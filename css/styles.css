@@ -49,8 +49,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .about-us-info .larger-box {
     display: -webkit-flex;
@@ -77,32 +77,63 @@
   .about-us-info .larger-box .inner-box img {
     margin: auto;
   }
+  .about-us-info .larger-box .inner-box h3 {
+    text-align: center;
+  }
   .about-us-info .larger-box .inner-box p {
     margin-top: 1em;
     text-align: center;
   }
-  .about-us-info .top-row-services {
+  .services h1 {
+    text-align: center;
+  }
+  .services .top-row-services {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
-  .about-us-info .top-row-services .dog-walking, .about-us-info .top-row-services .dog-sitting, .about-us-info .top-row-services .cat-sitting {
+  .services .top-row-services .dog-walking, .services .top-row-services .dog-sitting, .services .top-row-services .cat-sitting {
     text-align: center;
     width: 51%;
   }
-  .about-us-info #map {
+  .services .top-row-services .dog-walking hr, .services .top-row-services .dog-sitting hr, .services .top-row-services .cat-sitting hr {
+    height: 1px;
+    width: 5em;
+    background-color: #000;
+  }
+  .services .bottom-row-services {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-bottom: 2em;
+  }
+  .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
+    text-align: center;
+    width: 51%;
+  }
+  .services .bottom-row-services .pet-taxi hr, .services .bottom-row-services .catercise hr, .services .bottom-row-services .pet-portraits hr {
+    height: 1px;
+    width: 5em;
+    background-color: #000;
+  }
+  footer #map {
     height: 410px;
     width: 100%;
     z-index: -1;
   }
-  .about-us-info .contact-header {
+  footer .contact-header {
     margin-top: -400px;
     padding: 4em 0 3;
   }
@@ -163,6 +194,12 @@
   }
   .about-us-info .larger-box .inner-box {
     height: 30em;
+  }
+  .services .top-row-services .dog-walking, .services .top-row-services .dog-sitting, .services .top-row-services .cat-sitting {
+    width: 25%;
+  }
+  .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
+    width: 25%;
   }
 }
 
