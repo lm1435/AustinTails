@@ -102,6 +102,9 @@
     text-align: center;
     width: 51%;
   }
+  .services .top-row-services .dog-walking img, .services .top-row-services .dog-sitting img, .services .top-row-services .cat-sitting img {
+    margin: auto;
+  }
   .services .top-row-services .dog-walking hr, .services .top-row-services .dog-sitting hr, .services .top-row-services .cat-sitting hr {
     height: 1px;
     width: 5em;
@@ -122,6 +125,9 @@
   .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
     text-align: center;
     width: 51%;
+  }
+  .services .bottom-row-services .pet-taxi img, .services .bottom-row-services .catercise img, .services .bottom-row-services .pet-portraits img {
+    margin: auto;
   }
   .services .bottom-row-services .pet-taxi hr, .services .bottom-row-services .catercise hr, .services .bottom-row-services .pet-portraits hr {
     height: 1px;
