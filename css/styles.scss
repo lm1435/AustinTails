@@ -56,6 +56,21 @@ $blue: #66AFCA;
     }
   }
 
+  .navbar-toggle {
+    background-color: $blue;
+    .icon-bar {
+      background-color: white;
+    }
+  }
+
+  .navbar-nav {
+    margin-bottom: 1em;
+    text-align: center;
+    li {
+      font-size: 2em;
+    }
+  }
+
   .about-us h1 {
     background-color: $blue;
     margin: 0;
@@ -95,9 +110,10 @@ $blue: #66AFCA;
     .top-row-services {
       @include flexbox;
       @include flex-wrap;
-      padding-top: 1em;
       justify-content: space-around;
+      margin-top: 2em;
       .dog-walking, .dog-sitting, .cat-sitting {
+        margin-bottom: 2em;
         text-align: center;
         width: 51%;
         img {
@@ -115,6 +131,7 @@ $blue: #66AFCA;
       justify-content: space-around;
       margin-bottom: 2em;
       .pet-taxi, .catercise, .pet-portraits {
+        margin-bottom: 2em;
         text-align: center;
         width: 51%;
         img {
@@ -175,7 +192,7 @@ $blue: #66AFCA;
       margin-bottom: 3em;
     }
     h1, h2 {
-      font-size: 2em;
+      font-size: 2.5em;
     }
   }
 
@@ -224,6 +241,22 @@ $blue: #66AFCA;
     }
   }
 
+  .services {
+    .top-row-services {
+      margin-top: 4em;
+      .dog-walking, .dog-sitting, .cat-sitting {
+        width: 27%;
+      }
+    }
+
+    .bottom-row-services {
+      margin-bottom: 4em;
+      .pet-taxi, .catercise, .pet-portraits {
+        width: 27%;
+      }
+    }
+  }
+
 
 }
 
@@ -241,6 +274,11 @@ $blue: #66AFCA;
   .larger-box {
     padding: 5em 3em 5em 3em;
   }
+
+  .services h1, .about-us h1 {
+    font-size: 3em;
+    padding: 2em 0 2em 0;
+  }
 }
 
 @media (min-width: 822px) {
@@ -249,11 +287,9 @@ $blue: #66AFCA;
       font-size: 5em;
     }
   }
-  .services {
-    h1 {
-      font-size: 4em;
-      padding: 2em 0 2em 0;
-    }
+  .services h1, .about-us h1 {
+    font-size: 4em;
+    padding: 2em 0 2em 0;
   }
 
   .larger-box {
@@ -265,16 +301,17 @@ $blue: #66AFCA;
       width: 30%;
     }
   }
+  footer {
+    #map {
+      height: 610px;
+      width: 100%;
+      z-index: -1;
+    }
 
-  #map {
-    height: 610px;
-    width: 100%;
-    z-index: -1;
-  }
-
-  .contact-header {
-    margin-top: -600px;
-    padding: 4em 0 3em;
+    .contact-header {
+      margin-top: -600px;
+      padding: 4em 0 3em;
+    }
   }
 }
 

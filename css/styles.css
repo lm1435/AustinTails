@@ -35,6 +35,19 @@
     font-family: home;
     text-align: center;
   }
+  .navbar-toggle {
+    background-color: #66AFCA;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  .navbar-nav {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .navbar-nav li {
+    font-size: 2em;
+  }
   .about-us h1 {
     background-color: #66AFCA;
     margin: 0;
@@ -81,12 +94,13 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-top: 1em;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+    margin-top: 2em;
   }
   .services .top-row-services .dog-walking, .services .top-row-services .dog-sitting, .services .top-row-services .cat-sitting {
+    margin-bottom: 2em;
     text-align: center;
     width: 51%;
   }
@@ -111,6 +125,7 @@
     margin-bottom: 2em;
   }
   .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
+    margin-bottom: 2em;
     text-align: center;
     width: 51%;
   }
@@ -162,7 +177,7 @@
     margin-bottom: 3em;
   }
   .main h1, .main h2 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .larger-box {
     -webkit-justify-content: space-around;
@@ -199,6 +214,18 @@
   .main h1, .main h2 {
     font-size: 2em;
   }
+  .services .top-row-services {
+    margin-top: 4em;
+  }
+  .services .top-row-services .dog-walking, .services .top-row-services .dog-sitting, .services .top-row-services .cat-sitting {
+    width: 27%;
+  }
+  .services .bottom-row-services {
+    margin-bottom: 4em;
+  }
+  .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
+    width: 27%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -214,13 +241,17 @@
   .larger-box {
     padding: 5em 3em 5em 3em;
   }
+  .services h1, .about-us h1 {
+    font-size: 3em;
+    padding: 2em 0 2em 0;
+  }
 }
 
 @media (min-width: 822px) {
   .main h1, .main h2 {
     font-size: 5em;
   }
-  .services h1 {
+  .services h1, .about-us h1 {
     font-size: 4em;
     padding: 2em 0 2em 0;
   }
@@ -233,12 +264,12 @@
   .larger-box .personal {
     width: 30%;
   }
-  #map {
+  footer #map {
     height: 610px;
     width: 100%;
     z-index: -1;
   }
-  .contact-header {
+  footer .contact-header {
     margin-top: -600px;
     padding: 4em 0 3em;
   }

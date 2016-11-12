@@ -1,3 +1,13 @@
+if ($(window).width() <420) {
+  $('.small-adjust').show();
+  $('.large-adjust').hide();
+  $('.text-right').css("text-align","left");
+} else {
+  $('.small-adjust').hide();
+  $('.large-adjust').show();
+  $('.text-right').css("text-align", "right");
+}
+
   // Map API //
 var map;
 function initMap() {
@@ -79,15 +89,7 @@ function initMap() {
   });
 }
 
-if ($(window).width() <420) {
-  $('.small-adjust').show();
-  $('.large-adjust').hide();
-  $('.text-right').css("text-align","left");
-} else {
-  $('.small-adjust').hide();
-  $('.large-adjust').show();
-  $('.text-right').css("text-align", "right");
-}
+
 
 //
 // $(document).ready(function() {
