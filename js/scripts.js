@@ -79,6 +79,15 @@ function initMap() {
   });
 }
 
+if ($(window).width() <420) {
+  $('.small-adjust').show();
+  $('.large-adjust').hide();
+} else {
+  $('.small-adjust').hide();
+  $('.large-adjust').show();
+}
+
+
 $(document).ready(function() {
   var userFeed = new Instafeed({
     get: 'user',

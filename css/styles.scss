@@ -27,6 +27,10 @@
   background-color: #000;
 }
 
+$blue: #66AFCA;
+
+/*          end of the mixins and variables         */
+
 
 @media (min-width: 320px) {
   .navbar {
@@ -56,36 +60,29 @@
     margin: 2em 0 2em 0;
   }
 
-  .about-us-info {
+  .personal-color {
+    background-color: #F8F8F8;
+  }
+  .personal-color2 {
+    background-color: $blue;
+  }
+  .bottom-personal {
+    margin-bottom: 4em;
+  }
+
+  .larger-box {
     @include flexbox;
     @include flexbox-center;
     @include flex-wrap;
-    .larger-box {
-      @include flexbox;
-      @include flexbox-center;
-      height: 27em;
-      background-color: silver;
-      width: 80%;
-      margin-bottom: 4em;
-      z-index: -999999;
-      .inner-box {
-        background-color: white;
-        height:25em;
-        padding: 1em 0.5em 1em 0.5em;
-        width:90%;
-        img {
-          margin: auto;
-        }
-        h3 {
-          text-align: center;
-        }
-        p {
-          margin-top: 1em;
-          text-align: center;
-        }
-      }
+    padding: 2em 1em 2em 1em;
+    img {
+      width: 60%;
+    }
+    .personal {
+      width: 60%;
     }
   }
+
   .services {
     h1 {
       text-align: center;
@@ -156,25 +153,12 @@
 }
 
 @media (min-width: 375px) {
-  .about-us-info {
-    .larger-box {
-      height: 25em;
-      .inner-box {
-        height: 23em;
-      }
-    }
-  }
+
 }
 
 @media (min-width: 410px) {
   .main {
     height: 55vh;
-  }
-
-  .about-us-info {
-    .larger-box {
-      width: 70%;
-    }
   }
 }
 
@@ -189,16 +173,17 @@
     }
   }
 
-  .about-us-info {
+  .larger-box {
     justify-content: space-around;
-    .larger-box {
-      width: 32%;
-      height: 32em;
-      .inner-box {
-        height: 30em;
-      }
+    padding: 3em 2em 3em 2em;
+    img {
+      width: 30%;
+    }
+    .personal {
+      width: 40%;
     }
   }
+
   .services {
     .top-row-services {
       .dog-walking, .dog-sitting, .cat-sitting {
@@ -227,11 +212,7 @@
     }
   }
 
-  .about-us-info {
-    .larger-box {
-      width: 30%;
-    }
-  }
+
 }
 
 @media (min-width: 768px) {
@@ -244,13 +225,10 @@
       font-size: 4em;
     }
   }
-  .about-us-info {
-    .larger-box {
-      height: 45vh;
-      .inner-box {
-        height: 90%;
-      }
-    }
+
+  .larger-box {
+    justify-content: space-around;
+    padding: 5em 3em 5em 3em;
   }
 }
 
@@ -275,15 +253,7 @@
 }
 
 @media (min-width: 1020px) {
-  .about-us-info {
-    .larger-box {
-      .inner-box {
-        p {
-          margin-top: 2em;
-        }
-      }
-    }
-  }
+
 }
 
 @media (min-width: 1272px) {
