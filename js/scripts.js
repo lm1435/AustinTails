@@ -90,13 +90,15 @@ function initMap() {
 }
 
 
+var feed = new Instafeed ({
+  get: 'popular',
+  limit: 8,
+  clientId: '0343fcec537941cc878871673e5a5ec9'
+});
+feed.run();
 
-//
-// $(document).ready(function() {
-//   var userFeed = new Instafeed({
-//     get: 'user',
-//     userId: 'YOUR_USER_ID',
-//     accessToken: 'YOUR_ACCESS_TOKEN'
-//   });
-//   userFeed.run();
-//  });
+
+
+$(document).ready(function() {
+
+ });
