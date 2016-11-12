@@ -3,6 +3,7 @@
   src: url(../files/edo.ttf);
 }
 
+/*          end of the mixins and variables         */
 @media (min-width: 320px) {
   .navbar {
     margin-bottom: 0;
@@ -38,7 +39,16 @@
     text-align: center;
     margin: 2em 0 2em 0;
   }
-  .about-us-info {
+  .personal-color {
+    background-color: #F8F8F8;
+  }
+  .personal-color2 {
+    background-color: #66AFCA;
+  }
+  .bottom-personal {
+    margin-bottom: 4em;
+  }
+  .larger-box {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -51,38 +61,13 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding: 2em 1em 2em 1em;
   }
-  .about-us-info .larger-box {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 27em;
-    background-color: silver;
-    width: 80%;
-    margin-bottom: 4em;
-    z-index: -999999;
+  .larger-box img {
+    width: 60%;
   }
-  .about-us-info .larger-box .inner-box {
-    background-color: white;
-    height: 25em;
-    padding: 1em 0.5em 1em 0.5em;
-    width: 90%;
-  }
-  .about-us-info .larger-box .inner-box img {
-    margin: auto;
-  }
-  .about-us-info .larger-box .inner-box h3 {
-    text-align: center;
-  }
-  .about-us-info .larger-box .inner-box p {
-    margin-top: 1em;
-    text-align: center;
+  .larger-box .personal {
+    width: 60%;
   }
   .services h1 {
     text-align: center;
@@ -155,21 +140,9 @@
   }
 }
 
-@media (min-width: 375px) {
-  .about-us-info .larger-box {
-    height: 25em;
-  }
-  .about-us-info .larger-box .inner-box {
-    height: 23em;
-  }
-}
-
 @media (min-width: 410px) {
   .main {
     height: 55vh;
-  }
-  .about-us-info .larger-box {
-    width: 70%;
   }
 }
 
@@ -183,17 +156,17 @@
   .main h1, .main h2 {
     font-size: 2em;
   }
-  .about-us-info {
+  .larger-box {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+    padding: 3em 2em 3em 2em;
   }
-  .about-us-info .larger-box {
-    width: 32%;
-    height: 32em;
+  .larger-box img {
+    width: 30%;
   }
-  .about-us-info .larger-box .inner-box {
-    height: 30em;
+  .larger-box .personal {
+    width: 40%;
   }
   .services .top-row-services .dog-walking, .services .top-row-services .dog-sitting, .services .top-row-services .cat-sitting {
     width: 25%;
@@ -215,9 +188,6 @@
   .main h1, .main h2 {
     font-size: 2em;
   }
-  .about-us-info .larger-box {
-    width: 30%;
-  }
 }
 
 @media (min-width: 768px) {
@@ -230,11 +200,11 @@
   .main h1, .main h2 {
     font-size: 4em;
   }
-  .about-us-info .larger-box {
-    height: 45vh;
-  }
-  .about-us-info .larger-box .inner-box {
-    height: 90%;
+  .larger-box {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 5em 3em 5em 3em;
   }
 }
 
@@ -253,11 +223,5 @@
   .contact-header {
     margin-top: -600px;
     padding: 4em 0 3;
-  }
-}
-
-@media (min-width: 1020px) {
-  .about-us-info .larger-box .inner-box p {
-    margin-top: 2em;
   }
 }
