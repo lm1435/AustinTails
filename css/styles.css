@@ -81,11 +81,35 @@
   .larger-box .personal {
     width: 60%;
   }
+  .instagram h1 {
+    background-color: #66AFCA;
+    margin: 0;
+    text-align: center;
+    padding: 2em 0 2em 0;
+  }
+  .instagram #instafeed {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 2em 0 2em 0;
+  }
+  .instagram #instafeed img {
+    padding: .2em;
+  }
   .services h1 {
     background-color: #66AFCA;
     margin: 0;
-    padding: 2em 0 2em 0;
     text-align: center;
+    padding: 2em 0 2em 0;
   }
   .services .top-row-services {
     display: -webkit-flex;
@@ -241,7 +265,7 @@
   .larger-box {
     padding: 5em 3em 5em 3em;
   }
-  .services h1, .about-us h1 {
+  .services h1, .about-us h1, .instagram h1 {
     font-size: 3em;
     padding: 2em 0 2em 0;
   }
@@ -251,7 +275,7 @@
   .main h1, .main h2 {
     font-size: 5em;
   }
-  .services h1, .about-us h1 {
+  .services h1, .about-us h1, .instagram h1 {
     font-size: 4em;
     padding: 2em 0 2em 0;
   }

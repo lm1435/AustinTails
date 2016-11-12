@@ -27,6 +27,13 @@
   background-color: #000;
 }
 
+@mixin h1 {
+  background-color: $blue;
+  margin: 0;
+  text-align: center;
+  padding: 2em 0 2em 0;
+}
+
 $blue: #66AFCA;
 
 /*          end of the mixins and variables         */
@@ -72,10 +79,7 @@ $blue: #66AFCA;
   }
 
   .about-us h1 {
-    background-color: $blue;
-    margin: 0;
-    text-align: center;
-    padding: 2em 0 2em 0;
+    @include h1;
   }
 
   .personal-color {
@@ -99,14 +103,25 @@ $blue: #66AFCA;
     }
   }
 
+  .instagram {
+    h1 {
+      @include h1;
+    }
+    #instafeed {
+      @include flexbox;
+      @include flex-wrap;
+      @include flexbox-center;
+      margin: 2em 0 2em 0;
+      img {
+        padding: .2em;
+      }
+    }
+  }
+
   .services {
     h1 {
-      background-color: $blue;
-      margin: 0;
-      padding: 2em 0 2em 0;
-      text-align: center;
+      @include h1;
     }
-
     .top-row-services {
       @include flexbox;
       @include flex-wrap;
@@ -273,7 +288,7 @@ $blue: #66AFCA;
     padding: 5em 3em 5em 3em;
   }
 
-  .services h1, .about-us h1 {
+  .services h1, .about-us h1, .instagram h1 {
     font-size: 3em;
     padding: 2em 0 2em 0;
   }
@@ -285,7 +300,7 @@ $blue: #66AFCA;
       font-size: 5em;
     }
   }
-  .services h1, .about-us h1 {
+  .services h1, .about-us h1, .instagram h1 {
     font-size: 4em;
     padding: 2em 0 2em 0;
   }

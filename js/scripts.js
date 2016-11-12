@@ -89,17 +89,20 @@ function initMap() {
   });
 }
 
-var feed = new Instafeed({
-  get: 'user',
-  userId:  3283243219,
-  accessToken: '3283243219.1677ed0.bc76925c47d54152af3aee59a5bff458',
-  clientId: '326af9e12adf4197aa05eea3f10d0a3d',
-  limit: 12,
-  sortBy: 'most-recent'
-});
-feed.run();
+
 
 $(document).ready(function() {
+  var feed = new Instafeed({
+    get: 'user',
+    userId:  3283243219,
+    accessToken: '3283243219.1677ed0.bc76925c47d54152af3aee59a5bff458',
+    clientId: '326af9e12adf4197aa05eea3f10d0a3d',
+    limit: 12,
+    sortBy: 'most-recent',
+    resolution: 'low_resolution'
+  });
+  feed.run();
 
+  $('#instafeed:img').css("width", "200px");
 
  });
