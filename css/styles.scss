@@ -36,6 +36,7 @@ $blue: #66AFCA;
   .navbar {
     margin-bottom: 0;
   }
+
   .main {
     background-image: url(../img/small-dog.jpg);
     background-position: center;
@@ -56,18 +57,18 @@ $blue: #66AFCA;
   }
 
   .about-us h1 {
+    background-color: $blue;
+    margin: 0;
     text-align: center;
-    margin: 2em 0 2em 0;
+    padding: 2em 0 2em 0;
   }
 
   .personal-color {
     background-color: #F8F8F8;
   }
+
   .personal-color2 {
     background-color: $blue;
-  }
-  .bottom-personal {
-    margin-bottom: 4em;
   }
 
   .larger-box {
@@ -85,11 +86,16 @@ $blue: #66AFCA;
 
   .services {
     h1 {
+      background-color: $blue;
+      margin: 0;
+      padding: 2em 0 2em 0;
       text-align: center;
     }
+
     .top-row-services {
       @include flexbox;
       @include flex-wrap;
+      padding-top: 1em;
       justify-content: space-around;
       .dog-walking, .dog-sitting, .cat-sitting {
         text-align: center;
@@ -131,13 +137,13 @@ $blue: #66AFCA;
 
     .contact-header {
       margin-top: -400px;
-      padding: 4em 0 3
     }
 
     #contact h1, .links {
     color: white;
     text-align: center;
     }
+
     hr {
       @include hr;
     }
@@ -151,10 +157,10 @@ $blue: #66AFCA;
     }
   }
 }
-
-@media (min-width: 375px) {
-
-}
+//
+// @media (min-width: 375px) {
+//
+// }
 
 @media (min-width: 410px) {
   .main {
@@ -197,6 +203,12 @@ $blue: #66AFCA;
       }
     }
   }
+
+  footer {
+    #contactform {
+      width: 50%;
+    }
+  }
 }
 
 @media (min-width: 667px) {
@@ -227,16 +239,30 @@ $blue: #66AFCA;
   }
 
   .larger-box {
-    justify-content: space-around;
     padding: 5em 3em 5em 3em;
   }
 }
 
 @media (min-width: 822px) {
   .main {
-    height: 100vh;
     h1, h2 {
       font-size: 5em;
+    }
+  }
+  .services {
+    h1 {
+      font-size: 4em;
+      padding: 2em 0 2em 0;
+    }
+  }
+
+  .larger-box {
+    padding: 8em 6em 8em 6em;
+    img {
+      width: 40%;
+    }
+    .personal {
+      width: 30%;
     }
   }
 
@@ -248,7 +274,7 @@ $blue: #66AFCA;
 
   .contact-header {
     margin-top: -600px;
-    padding: 4em 0 3
+    padding: 4em 0 3em;
   }
 }
 

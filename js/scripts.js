@@ -82,17 +82,19 @@ function initMap() {
 if ($(window).width() <420) {
   $('.small-adjust').show();
   $('.large-adjust').hide();
+  $('.text-right').css("text-align","left");
 } else {
   $('.small-adjust').hide();
   $('.large-adjust').show();
+  $('.text-right').css("text-align", "right");
 }
 
-
-$(document).ready(function() {
-  var userFeed = new Instafeed({
-    get: 'user',
-    userId: 'YOUR_USER_ID',
-    accessToken: 'YOUR_ACCESS_TOKEN'
-  });
-  userFeed.run();
- });
+//
+// $(document).ready(function() {
+//   var userFeed = new Instafeed({
+//     get: 'user',
+//     userId: 'YOUR_USER_ID',
+//     accessToken: 'YOUR_ACCESS_TOKEN'
+//   });
+//   userFeed.run();
+//  });

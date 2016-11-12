@@ -36,17 +36,16 @@
     text-align: center;
   }
   .about-us h1 {
+    background-color: #66AFCA;
+    margin: 0;
     text-align: center;
-    margin: 2em 0 2em 0;
+    padding: 2em 0 2em 0;
   }
   .personal-color {
     background-color: #F8F8F8;
   }
   .personal-color2 {
     background-color: #66AFCA;
-  }
-  .bottom-personal {
-    margin-bottom: 4em;
   }
   .larger-box {
     display: -webkit-flex;
@@ -70,6 +69,9 @@
     width: 60%;
   }
   .services h1 {
+    background-color: #66AFCA;
+    margin: 0;
+    padding: 2em 0 2em 0;
     text-align: center;
   }
   .services .top-row-services {
@@ -79,6 +81,7 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding-top: 1em;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
@@ -126,7 +129,6 @@
   }
   footer .contact-header {
     margin-top: -400px;
-    padding: 4em 0 3;
   }
   footer #contact h1, footer .links {
     color: white;
@@ -180,6 +182,9 @@
   .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
     width: 25%;
   }
+  footer #contactform {
+    width: 50%;
+  }
 }
 
 @media (min-width: 667px) {
@@ -207,19 +212,26 @@
     font-size: 4em;
   }
   .larger-box {
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
     padding: 5em 3em 5em 3em;
   }
 }
 
 @media (min-width: 822px) {
-  .main {
-    height: 100vh;
-  }
   .main h1, .main h2 {
     font-size: 5em;
+  }
+  .services h1 {
+    font-size: 4em;
+    padding: 2em 0 2em 0;
+  }
+  .larger-box {
+    padding: 8em 6em 8em 6em;
+  }
+  .larger-box img {
+    width: 40%;
+  }
+  .larger-box .personal {
+    width: 30%;
   }
   #map {
     height: 610px;
@@ -228,6 +240,6 @@
   }
   .contact-header {
     margin-top: -600px;
-    padding: 4em 0 3;
+    padding: 4em 0 3em;
   }
 }
