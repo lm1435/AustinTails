@@ -1,4 +1,3 @@
-
   // Map API //
 var map;
 function initMap() {
@@ -81,6 +80,7 @@ function initMap() {
 }
 
 $(document).ready(function() {
+  //Instagram API//
   var feed = new Instafeed({
     get: 'user',
     userId:  3283243219,
@@ -92,6 +92,7 @@ $(document).ready(function() {
   });
   feed.run();
 
+  // Small screen adjusting for about us //
   if ($(window).width() <420) {
     $('.small-adjust').show();
     $('.large-adjust').hide();
@@ -102,4 +103,46 @@ $(document).ready(function() {
     $('.text-right').css("text-align", "right");
   }
 
- });
+  //smooth scrolling//
+  var $root = $('html, body');
+    $('.navbar-nav a').click(function() {
+      var href = $.attr(this, 'href');
+      $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function() {
+      window.location.hash = href;
+    });
+      return false;
+  });
+
+  // formspree protection from spam //
+  var contactform = document.getElementById('contactform');
+  contactform.setAttribute('action', 'https://formspree.io/' + 'INSERT-EMAIL');
+
+  //form verification for safari because require doesnt work //
+  var forms = document.getElementsByTagName('form');
+  for (var i = 0; i < forms.length; i++) {
+    forms[i].noValidate = true;
+    forms[i].addEventListener('submit', function(event) {
+      if (!event.target.checkValidity()) {
+        event.preventDefault();
+        alert('Please fill out the form. Thank you!');
+      }
+    }, false);
+  }
+  //collapse navbar when not linking to new page //
+  $("nav").find("li").on("click", "a", function () {
+    $('.navbar-collapse.in').collapse('hide');
+  });
+
+  $('.button').css({
+    'background-color': '#66AFCA',
+    'padding': '1.5em .25em'
+  });
+
+  $('.button > a').css({
+    'color': 'white',
+    'text-decoration': 'none',
+    'padding': '1.5em',
+  });
+});

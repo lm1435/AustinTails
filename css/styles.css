@@ -8,6 +8,19 @@
   .navbar {
     margin-bottom: 0;
   }
+  .navbar-toggle {
+    background-color: #66AFCA;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  .navbar-nav {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .navbar-nav li {
+    font-size: 2em;
+  }
   .main {
     background-image: url(../img/small-dog.jpg);
     background-position: center;
@@ -34,19 +47,6 @@
     font-size: 3em;
     font-family: home;
     text-align: center;
-  }
-  .navbar-toggle {
-    background-color: #66AFCA;
-  }
-  .navbar-toggle .icon-bar {
-    background-color: white;
-  }
-  .navbar-nav {
-    margin-bottom: 1em;
-    text-align: center;
-  }
-  .navbar-nav li {
-    font-size: 2em;
   }
   .about-us h1 {
     background-color: #66AFCA;
@@ -264,11 +264,9 @@
   .main {
     height: 100vh;
   }
-  .main h1 {
-    margin-bottom: 5em;
-  }
   .main h1, .main h2 {
     font-size: 4em;
+    margin-bottom: 3em;
   }
   .larger-box {
     padding: 5em 3em 5em 3em;
@@ -299,7 +297,11 @@
     padding: 1em 0 1em 0;
   }
   .instagram #instafeed img {
+    opacity: 0.7;
     width: 24vw;
+  }
+  .instagram #instafeed img:hover {
+    opacity: 1;
   }
   footer #map {
     height: 610px;
