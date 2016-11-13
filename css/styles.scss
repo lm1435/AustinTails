@@ -111,9 +111,10 @@ $blue: #66AFCA;
       @include flexbox;
       @include flex-wrap;
       @include flexbox-center;
-      margin: 2em 0 2em 0;
+      padding: .2em 0 .2em 0;
       img {
         padding: .2em;
+        width: 48vw;
       }
     }
   }
@@ -189,10 +190,6 @@ $blue: #66AFCA;
     }
   }
 }
-//
-// @media (min-width: 375px) {
-//
-// }
 
 @media (min-width: 410px) {
   .main {
@@ -221,6 +218,17 @@ $blue: #66AFCA;
       width: 40%;
     }
   }
+
+  .instagram {
+    #instafeed {
+      padding: .5em .25em .5em .25em;
+      img {
+        padding: .5em;
+        width: 33vw;
+      }
+    }
+  }
+
 
   .services {
     .top-row-services {
@@ -302,7 +310,6 @@ $blue: #66AFCA;
   }
   .services h1, .about-us h1, .instagram h1 {
     font-size: 4em;
-    padding: 2em 0 2em 0;
   }
 
   .larger-box {
@@ -314,6 +321,16 @@ $blue: #66AFCA;
       width: 30%;
     }
   }
+
+  .instagram {
+    #instafeed {
+      padding: 1em 0 1em 0;
+      img {
+        width: 24vw;
+      }
+    }
+  }
+
   footer {
     #map {
       height: 610px;

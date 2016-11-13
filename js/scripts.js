@@ -1,12 +1,3 @@
-if ($(window).width() <420) {
-  $('.small-adjust').show();
-  $('.large-adjust').hide();
-  $('.text-right').css("text-align","left");
-} else {
-  $('.small-adjust').hide();
-  $('.large-adjust').show();
-  $('.text-right').css("text-align", "right");
-}
 
   // Map API //
 var map;
@@ -89,8 +80,6 @@ function initMap() {
   });
 }
 
-
-
 $(document).ready(function() {
   var feed = new Instafeed({
     get: 'user',
@@ -103,6 +92,14 @@ $(document).ready(function() {
   });
   feed.run();
 
-  $('#instafeed:img').css("width", "200px");
+  if ($(window).width() <420) {
+    $('.small-adjust').show();
+    $('.large-adjust').hide();
+    $('.text-right').css("text-align","left");
+  } else {
+    $('.small-adjust').hide();
+    $('.large-adjust').show();
+    $('.text-right').css("text-align", "right");
+  }
 
  });

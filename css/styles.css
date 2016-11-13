@@ -100,10 +100,11 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 2em 0 2em 0;
+    padding: .2em 0 .2em 0;
   }
   .instagram #instafeed img {
     padding: .2em;
+    width: 48vw;
   }
   .services h1 {
     background-color: #66AFCA;
@@ -215,6 +216,13 @@
   .larger-box .personal {
     width: 40%;
   }
+  .instagram #instafeed {
+    padding: .5em .25em .5em .25em;
+  }
+  .instagram #instafeed img {
+    padding: .5em;
+    width: 33vw;
+  }
   .services .top-row-services .dog-walking, .services .top-row-services .dog-sitting, .services .top-row-services .cat-sitting {
     width: 25%;
   }
@@ -277,7 +285,6 @@
   }
   .services h1, .about-us h1, .instagram h1 {
     font-size: 4em;
-    padding: 2em 0 2em 0;
   }
   .larger-box {
     padding: 8em 6em 8em 6em;
@@ -287,6 +294,12 @@
   }
   .larger-box .personal {
     width: 30%;
+  }
+  .instagram #instafeed {
+    padding: 1em 0 1em 0;
+  }
+  .instagram #instafeed img {
+    width: 24vw;
   }
   footer #map {
     height: 610px;
