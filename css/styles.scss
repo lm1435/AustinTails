@@ -1,4 +1,5 @@
 $blue: #66AFCA;
+$grey: #F8F8F8;
 
 @mixin flexbox {
   display: -webkit-box;
@@ -87,7 +88,7 @@ $blue: #66AFCA;
   }
 
   .personal-color {
-    background-color: #F8F8F8;
+    background-color: $grey;
   }
 
   .personal-color2 {
@@ -164,7 +165,8 @@ $blue: #66AFCA;
     }
   }
 
-  footer {
+  .contact {
+    background-color: $grey;
     h1 {
       @include h1;
       margin-bottom: 1em;
@@ -173,19 +175,25 @@ $blue: #66AFCA;
       @include flexbox;
       @include flex-wrap;
       @include flexbox-center;
-      #map {
-        height: 300px;
-        width: 90%;
-        margin-bottom: 2em;
-      }
       .form {
         width: 80%;
         input {
-          margin-bottom: 1em;
+          border-radius: 0;
+          margin-bottom: .5em;
+        }
+        textarea {
+          border-radius: 0;
         }
       }
     }
+  }
 
+  footer {
+    #map {
+      height: 300px;
+      width: 90%;
+      margin-bottom: 2em;
+    }
     .links {
       text-align: center;
     }
@@ -240,23 +248,25 @@ $blue: #66AFCA;
       }
     }
   }
+  //
+  // .contact {
+  //   .contact-form {
+  //     justify-content: space-around;
+  //     .form {
+  //       width: 40%;
+  //       input {
+  //         margin-bottom: 1em;
+  //       }
+  //     }
+  //   }
+  // }
 
   footer {
-    .contact-form {
-      justify-content: space-around;
-      #map {
-        height: 220px;
-        width: 40%;
-        margin-top: 1em;
-      }
-      .form {
-        width: 40%;
-        input {
-          margin-bottom: 1.5em;
-        }
-      }
+    #map {
+      height: 220px;
+      width: 40%;
+      margin-top: 1em;
     }
-
     .links {
       text-align: center;
     }

@@ -165,14 +165,17 @@
     width: 5em;
     background-color: #000;
   }
-  footer h1 {
+  .contact {
+    background-color: #F8F8F8;
+  }
+  .contact h1 {
     background-color: #66AFCA;
     margin: 0;
     text-align: center;
     padding: 2em 0 2em 0;
     margin-bottom: 1em;
   }
-  footer .contact-form {
+  .contact .contact-form {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -186,16 +189,20 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .contact-form #map {
+  .contact .contact-form .form {
+    width: 80%;
+  }
+  .contact .contact-form .form input {
+    border-radius: 0;
+    margin-bottom: .5em;
+  }
+  .contact .contact-form .form textarea {
+    border-radius: 0;
+  }
+  footer #map {
     height: 300px;
     width: 90%;
     margin-bottom: 2em;
-  }
-  footer .contact-form .form {
-    width: 80%;
-  }
-  footer .contact-form .form input {
-    margin-bottom: 1em;
   }
   footer .links {
     text-align: center;
@@ -241,21 +248,10 @@
   .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
     width: 25%;
   }
-  footer .contact-form {
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-  }
-  footer .contact-form #map {
+  footer #map {
     height: 220px;
     width: 40%;
     margin-top: 1em;
-  }
-  footer .contact-form .form {
-    width: 40%;
-  }
-  footer .contact-form .form input {
-    margin-bottom: 1.5em;
   }
   footer .links {
     text-align: center;
