@@ -164,33 +164,30 @@ $blue: #66AFCA;
     }
   }
 
-
   footer {
-    #map {
-      height: 410px;
-      width: 100%;
-      z-index: -1;
+    h1 {
+      @include h1;
+      margin-bottom: 1em;
     }
-
-    .contact-header {
-      margin-top: -400px;
-    }
-
-    #contact h1, .links {
-    color: white;
-    text-align: center;
-    }
-
-    hr {
-      @include hr;
-    }
-
-    #contactform {
-      margin: auto;
-      width: 80%;
-      input {
-        margin-bottom: 1em;
+    .contact-form {
+      @include flexbox;
+      @include flex-wrap;
+      @include flexbox-center;
+      #map {
+        height: 300px;
+        width: 90%;
+        margin-bottom: 2em;
       }
+      .form {
+        width: 80%;
+        input {
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    .links {
+      text-align: center;
     }
   }
 }
@@ -206,7 +203,7 @@ $blue: #66AFCA;
     height: 90vh;
     h1, h2 {
       font-size: 2.5em;
-       margin-bottom: .5em;
+      margin-bottom: .5em;
     }
   }
 
@@ -245,8 +242,23 @@ $blue: #66AFCA;
   }
 
   footer {
-    #contactform {
-      width: 50%;
+    .contact-form {
+      justify-content: space-around;
+      #map {
+        height: 220px;
+        width: 40%;
+        margin-top: 1em;
+      }
+      .form {
+        width: 40%;
+        input {
+          margin-bottom: 1.5em;
+        }
+      }
+    }
+
+    .links {
+      text-align: center;
     }
   }
 }
@@ -333,18 +345,6 @@ $blue: #66AFCA;
     }
   }
 
-  footer {
-    #map {
-      height: 610px;
-      width: 100%;
-      z-index: -1;
-    }
-
-    .contact-header {
-      margin-top: -600px;
-      padding: 4em 0 3em;
-    }
-  }
 }
 
 // @media (min-width: 1020px) {

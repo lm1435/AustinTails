@@ -165,29 +165,40 @@
     width: 5em;
     background-color: #000;
   }
-  footer #map {
-    height: 410px;
-    width: 100%;
-    z-index: -1;
-  }
-  footer .contact-header {
-    margin-top: -400px;
-  }
-  footer #contact h1, footer .links {
-    color: white;
+  footer h1 {
+    background-color: #66AFCA;
+    margin: 0;
     text-align: center;
+    padding: 2em 0 2em 0;
+    margin-bottom: 1em;
   }
-  footer hr {
-    height: 1px;
-    width: 5em;
-    background-color: #000;
+  footer .contact-form {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  footer #contactform {
-    margin: auto;
+  footer .contact-form #map {
+    height: 300px;
+    width: 90%;
+    margin-bottom: 2em;
+  }
+  footer .contact-form .form {
     width: 80%;
   }
-  footer #contactform input {
+  footer .contact-form .form input {
     margin-bottom: 1em;
+  }
+  footer .links {
+    text-align: center;
   }
 }
 
@@ -230,8 +241,24 @@
   .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
     width: 25%;
   }
-  footer #contactform {
-    width: 50%;
+  footer .contact-form {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  footer .contact-form #map {
+    height: 220px;
+    width: 40%;
+    margin-top: 1em;
+  }
+  footer .contact-form .form {
+    width: 40%;
+  }
+  footer .contact-form .form input {
+    margin-bottom: 1.5em;
+  }
+  footer .links {
+    text-align: center;
   }
 }
 
@@ -303,14 +330,5 @@
   }
   .instagram #instafeed img:hover {
     opacity: 1;
-  }
-  footer #map {
-    height: 610px;
-    width: 100%;
-    z-index: -1;
-  }
-  footer .contact-header {
-    margin-top: -600px;
-    padding: 4em 0 3em;
   }
 }
