@@ -153,6 +153,8 @@ $(document).ready(function() {
     $('.navbar-collapse.in').collapse('hide');
   });
 
+  $(".insta" > "a" > "img").addClass('fadeInBlock');
+
   //fade as you scroll//
   $(function() {
     $(window).scroll( function(){
