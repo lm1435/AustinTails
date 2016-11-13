@@ -152,6 +152,8 @@ $(document).ready(function() {
   $("nav").find("li").on("click", "a", function () {
     $('.navbar-collapse.in').collapse('hide');
   });
+
+  //fade as you scroll//
   $(function() {
     $(window).scroll( function(){
       $('.fadeInBlock').each( function(i){
