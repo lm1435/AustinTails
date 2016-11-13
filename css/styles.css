@@ -5,6 +5,9 @@
 
 /*          end of the mixins and variables         */
 @media (min-width: 320px) {
+  .fadeInBlock {
+    opacity: 0;
+  }
   .navbar {
     margin-bottom: 0;
   }
@@ -198,11 +201,9 @@
   .main {
     height: 90vh;
   }
-  .main h1 {
-    margin-bottom: 3em;
-  }
   .main h1, .main h2 {
     font-size: 2.5em;
+    margin-bottom: .5em;
   }
   .larger-box {
     -webkit-justify-content: space-around;
@@ -221,7 +222,7 @@
   }
   .instagram #instafeed img {
     padding: .5em;
-    width: 33vw;
+    width: 32vw;
   }
   .services .top-row-services .dog-walking, .services .top-row-services .dog-sitting, .services .top-row-services .cat-sitting {
     width: 25%;
