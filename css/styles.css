@@ -5,11 +5,8 @@
 
 /*          end of the mixins and variables         */
 @media (min-width: 320px) {
-  .fadeInBlock {
-    opacity: 0;
-  }
-  .navbar {
-    margin-bottom: 0;
+  body {
+    position: relative;
   }
   .navbar-toggle {
     background-color: #66AFCA;
@@ -23,6 +20,9 @@
   }
   .navbar-nav li {
     font-size: 2em;
+  }
+  .navbar-nav a {
+    color: black;
   }
   .main {
     background-image: url(../img/small-dog.jpg);
@@ -41,6 +41,7 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 50px;
   }
   .main h1, .main h2 {
     color: white;
@@ -80,6 +81,9 @@
   }
   .larger-box .personal {
     width: 60%;
+  }
+  .instagram {
+    background-color: #F8F8F8;
   }
   .instagram h1 {
     background-color: #66AFCA;
@@ -174,9 +178,7 @@
     margin-bottom: 2em;
   }
   .contact .contact-form {
-    background-image: url(../img/grass.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #F8F8F8;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -336,5 +338,8 @@
   }
   .instagram #instafeed img:hover {
     opacity: 1;
+  }
+  .contact .contact-form {
+    padding: 5em 0 5em 0;
   }
 }

@@ -1,4 +1,5 @@
 $blue: #66AFCA;
+
 $grey: #F8F8F8;
 
 @mixin flexbox {
@@ -41,12 +42,8 @@ $grey: #F8F8F8;
 
 
 @media (min-width: 320px) {
-  .fadeInBlock {
-    opacity:0;
-  }
-
-  .navbar {
-    margin-bottom: 0;
+  body {
+    position: relative;
   }
 
   .navbar-toggle {
@@ -62,6 +59,9 @@ $grey: #F8F8F8;
     li {
       font-size: 2em;
     }
+    a {
+      color: black;
+    }
   }
 
   .main {
@@ -72,6 +72,7 @@ $grey: #F8F8F8;
     @include flexbox;
     flex-direction: column;
     @include flexbox-center;
+    margin-top: 50px;
     h1 {
       // margin-bottom: 1em;
     }
@@ -109,6 +110,7 @@ $grey: #F8F8F8;
   }
 
   .instagram {
+    background-color: $grey;
     h1 {
       @include h1;
     }
@@ -175,9 +177,10 @@ $grey: #F8F8F8;
       margin-bottom: 2em;
     }
     .contact-form {
-      background-image: url(../img/grass.jpg);
-      background-position: center;
-      background-size: cover;
+      background-color: $grey;
+      // background-image: url(../img/background.jpg);
+      // background-position: center;
+      // background-size: cover;
       @include flexbox;
       @include flex-wrap;
       @include flexbox-center;
@@ -284,7 +287,6 @@ $grey: #F8F8F8;
     background-size: cover;
     height: 90vh;
     h1 {
-      // margin-bottom: 3em;
       font-size: 3em
     }
     h2 {
@@ -337,11 +339,6 @@ $grey: #F8F8F8;
 }
 
 @media (min-width: 822px) {
-  // .main {
-  //   h1, h2 {
-  //     font-size: 5em;
-  //   }
-  // }
   .services h1, .about-us h1, .instagram h1, .contact h1 {
     font-size: 4em;
   }
@@ -368,21 +365,9 @@ $grey: #F8F8F8;
       }
     }
   }
-
+  .contact {
+    .contact-form {
+      padding: 5em 0 5em 0;
+    }
+  }
 }
-
-// @media (min-width: 1020px) {
-//
-// }
-//
-// @media (min-width: 1272px) {
-//
-// }
-//
-// @media (min-width: 1356px) {
-//
-// }
-//
-// @media (min-width: 1420px) {
-//
-// }
