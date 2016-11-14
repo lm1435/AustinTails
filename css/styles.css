@@ -42,9 +42,6 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .main h1 {
-    margin-bottom: 1em;
-  }
   .main h1, .main h2 {
     color: white;
     font-size: 3em;
@@ -165,17 +162,21 @@
     width: 5em;
     background-color: #000;
   }
-  .contact {
-    background-color: #F8F8F8;
-  }
   .contact h1 {
     background-color: #66AFCA;
     margin: 0;
     text-align: center;
     padding: 2em 0 2em 0;
-    margin-bottom: 1em;
+  }
+  .contact #map {
+    height: 200px;
+    width: 250px;
+    margin-bottom: 2em;
   }
   .contact .contact-form {
+    background-image: url(../img/grass.jpg);
+    background-position: center;
+    background-size: cover;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -188,21 +189,22 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 2em 0 2em 0;
   }
   .contact .contact-form .form {
     width: 80%;
   }
-  .contact .contact-form .form input {
+  .contact .contact-form .form input, .contact .contact-form .form textarea, .contact .contact-form .form .btn-success {
     border-radius: 0;
+  }
+  .contact .contact-form .form input, .contact .contact-form .form textarea {
     margin-bottom: .5em;
   }
-  .contact .contact-form .form textarea {
-    border-radius: 0;
-  }
-  footer #map {
-    height: 300px;
-    width: 90%;
-    margin-bottom: 2em;
+  .contact .contact-form .form .btn-success {
+    background-color: #66AFCA;
+    border-color: #66AFCA;
+    padding: 1em;
+    width: 100%;
   }
   footer .links {
     text-align: center;
@@ -221,7 +223,6 @@
   }
   .main h1, .main h2 {
     font-size: 2.5em;
-    margin-bottom: .5em;
   }
   .larger-box {
     -webkit-justify-content: space-around;
@@ -248,10 +249,16 @@
   .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
     width: 25%;
   }
-  footer #map {
-    height: 220px;
+  .contact .contact-form {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .contact .contact-form .form {
     width: 40%;
-    margin-top: 1em;
+  }
+  .contact .contact-form .form input {
+    margin-bottom: 1em;
   }
   footer .links {
     text-align: center;
@@ -265,9 +272,9 @@
     height: 90vh;
   }
   .main h1 {
-    margin-bottom: 3em;
+    font-size: 3em;
   }
-  .main h1, .main h2 {
+  .main h2 {
     font-size: 2em;
   }
   .services .top-row-services {
@@ -288,24 +295,27 @@
   .main {
     height: 100vh;
   }
-  .main h1, .main h2 {
+  .main h1 {
+    font-size: 5em;
+  }
+  .main h2 {
     font-size: 4em;
-    margin-bottom: 3em;
   }
   .larger-box {
     padding: 5em 3em 5em 3em;
   }
-  .services h1, .about-us h1, .instagram h1 {
+  .services h1, .about-us h1, .instagram h1, .contact h1 {
     font-size: 3em;
     padding: 2em 0 2em 0;
+  }
+  .contact #map {
+    height: 300px;
+    width: 350px;
   }
 }
 
 @media (min-width: 822px) {
-  .main h1, .main h2 {
-    font-size: 5em;
-  }
-  .services h1, .about-us h1, .instagram h1 {
+  .services h1, .about-us h1, .instagram h1, .contact h1 {
     font-size: 4em;
   }
   .larger-box {

@@ -73,7 +73,7 @@ $grey: #F8F8F8;
     flex-direction: column;
     @include flexbox-center;
     h1 {
-      margin-bottom: 1em;
+      // margin-bottom: 1em;
     }
     h1, h2 {
       color: white;
@@ -166,34 +166,42 @@ $grey: #F8F8F8;
   }
 
   .contact {
-    background-color: $grey;
     h1 {
       @include h1;
-      margin-bottom: 1em;
+    }
+    #map {
+      height: 200px;
+      width: 250px;
+      margin-bottom: 2em;
     }
     .contact-form {
+      background-image: url(../img/grass.jpg);
+      background-position: center;
+      background-size: cover;
       @include flexbox;
       @include flex-wrap;
       @include flexbox-center;
+      padding: 2em 0 2em 0;
       .form {
         width: 80%;
-        input {
+        input, textarea, .btn-success {
           border-radius: 0;
+        }
+        input, textarea {
           margin-bottom: .5em;
         }
-        textarea {
-          border-radius: 0;
+        .btn-success {
+          background-color: $blue;
+          border-color: $blue;
+          padding: 1em;
+          width: 100%;
         }
+
       }
     }
   }
 
   footer {
-    #map {
-      height: 300px;
-      width: 90%;
-      margin-bottom: 2em;
-    }
     .links {
       text-align: center;
     }
@@ -211,7 +219,7 @@ $grey: #F8F8F8;
     height: 90vh;
     h1, h2 {
       font-size: 2.5em;
-      margin-bottom: .5em;
+      // margin-bottom: .5em;
     }
   }
 
@@ -248,25 +256,22 @@ $grey: #F8F8F8;
       }
     }
   }
-  //
-  // .contact {
-  //   .contact-form {
-  //     justify-content: space-around;
-  //     .form {
-  //       width: 40%;
-  //       input {
-  //         margin-bottom: 1em;
-  //       }
-  //     }
-  //   }
-  // }
 
-  footer {
-    #map {
-      height: 220px;
-      width: 40%;
-      margin-top: 1em;
+  .contact {
+    .contact-form {
+      justify-content: space-around;
+      .form {
+        width: 40%;
+        input {
+          margin-bottom: 1em;
+        }
+      }
     }
+  }
+
+
+
+   footer {
     .links {
       text-align: center;
     }
@@ -279,9 +284,10 @@ $grey: #F8F8F8;
     background-size: cover;
     height: 90vh;
     h1 {
-      margin-bottom: 3em;
+      // margin-bottom: 3em;
+      font-size: 3em
     }
-    h1, h2 {
+    h2 {
       font-size: 2em;
     }
   }
@@ -306,9 +312,11 @@ $grey: #F8F8F8;
 @media (min-width: 768px) {
   .main {
     height: 100vh;
-    h1, h2 {
+    h1{
+      font-size: 5em;
+    }
+    h2 {
       font-size: 4em;
-      margin-bottom: 3em;
     }
   }
 
@@ -316,19 +324,25 @@ $grey: #F8F8F8;
     padding: 5em 3em 5em 3em;
   }
 
-  .services h1, .about-us h1, .instagram h1 {
+  .services h1, .about-us h1, .instagram h1, .contact h1 {
     font-size: 3em;
     padding: 2em 0 2em 0;
+  }
+  .contact {
+    #map {
+      height: 300px;
+      width: 350px;
+    }
   }
 }
 
 @media (min-width: 822px) {
-  .main {
-    h1, h2 {
-      font-size: 5em;
-    }
-  }
-  .services h1, .about-us h1, .instagram h1 {
+  // .main {
+  //   h1, h2 {
+  //     font-size: 5em;
+  //   }
+  // }
+  .services h1, .about-us h1, .instagram h1, .contact h1 {
     font-size: 4em;
   }
 
