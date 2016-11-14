@@ -53,6 +53,12 @@ $grey: #F8F8F8;
     }
   }
 
+  #navbar {
+    &:focus {
+      background-color: $blue;
+    }
+  }
+
   .navbar-nav {
     margin-bottom: 1em;
     text-align: center;
@@ -84,8 +90,9 @@ $grey: #F8F8F8;
     }
   }
 
-  .about-us h1 {
+  .about-us h1, .instagram h1, .services h1, .contact h1 {
     @include h1;
+    font-family: home;
   }
 
   .personal-color {
@@ -111,9 +118,6 @@ $grey: #F8F8F8;
 
   .instagram {
     background-color: $grey;
-    h1 {
-      @include h1;
-    }
     #instafeed {
       @include flexbox;
       @include flex-wrap;
@@ -127,9 +131,6 @@ $grey: #F8F8F8;
   }
 
   .services {
-    h1 {
-      @include h1;
-    }
     .top-row-services {
       @include flexbox;
       @include flex-wrap;
@@ -168,9 +169,6 @@ $grey: #F8F8F8;
   }
 
   .contact {
-    h1 {
-      @include h1;
-    }
     #map {
       height: 200px;
       width: 250px;
@@ -201,12 +199,6 @@ $grey: #F8F8F8;
         }
 
       }
-    }
-  }
-
-  footer {
-    .links {
-      text-align: center;
     }
   }
 }
@@ -269,14 +261,6 @@ $grey: #F8F8F8;
           margin-bottom: 1em;
         }
       }
-    }
-  }
-
-
-
-   footer {
-    .links {
-      text-align: center;
     }
   }
 }

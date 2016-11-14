@@ -14,6 +14,9 @@
   .navbar-toggle .icon-bar {
     background-color: white;
   }
+  #navbar:focus {
+    background-color: #66AFCA;
+  }
   .navbar-nav {
     margin-bottom: 1em;
     text-align: center;
@@ -49,11 +52,12 @@
     font-family: home;
     text-align: center;
   }
-  .about-us h1 {
+  .about-us h1, .instagram h1, .services h1, .contact h1 {
     background-color: #66AFCA;
     margin: 0;
     text-align: center;
     padding: 2em 0 2em 0;
+    font-family: home;
   }
   .personal-color {
     background-color: #F8F8F8;
@@ -85,12 +89,6 @@
   .instagram {
     background-color: #F8F8F8;
   }
-  .instagram h1 {
-    background-color: #66AFCA;
-    margin: 0;
-    text-align: center;
-    padding: 2em 0 2em 0;
-  }
   .instagram #instafeed {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -109,12 +107,6 @@
   .instagram #instafeed img {
     padding: .2em;
     width: 48vw;
-  }
-  .services h1 {
-    background-color: #66AFCA;
-    margin: 0;
-    text-align: center;
-    padding: 2em 0 2em 0;
   }
   .services .top-row-services {
     display: -webkit-flex;
@@ -166,12 +158,6 @@
     width: 5em;
     background-color: #000;
   }
-  .contact h1 {
-    background-color: #66AFCA;
-    margin: 0;
-    text-align: center;
-    padding: 2em 0 2em 0;
-  }
   .contact #map {
     height: 200px;
     width: 250px;
@@ -207,9 +193,6 @@
     border-color: #66AFCA;
     padding: 1em;
     width: 100%;
-  }
-  footer .links {
-    text-align: center;
   }
 }
 
@@ -261,9 +244,6 @@
   }
   .contact .contact-form .form input {
     margin-bottom: 1em;
-  }
-  footer .links {
-    text-align: center;
   }
 }
 
