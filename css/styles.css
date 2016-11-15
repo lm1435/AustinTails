@@ -8,24 +8,24 @@
   body {
     position: relative;
   }
-  .navbar-toggle {
+  nav #navbar {
     background-color: #66AFCA;
   }
-  .navbar-toggle .icon-bar {
+  nav #navbar:hover {
+    background-color: #66AFCA;
+  }
+  nav #navbar .icon-bar {
     background-color: white;
   }
-  #navbar:focus {
-    background-color: #66AFCA;
-  }
-  .navbar-nav {
+  nav .navbar-nav {
     margin-bottom: 1em;
     text-align: center;
   }
-  .navbar-nav li {
-    font-size: 2em;
+  nav .navbar-nav li {
+    font-size: 1.2em;
   }
-  .navbar-nav a {
-    color: black;
+  nav .navbar-nav li a {
+    color: black !important;
   }
   .main {
     background-image: url(../img/small-dog.jpg);
@@ -274,6 +274,15 @@
 }
 
 @media (min-width: 768px) {
+  nav .navbar-nav {
+    margin-bottom: 0;
+  }
+  nav .navbar-nav li {
+    font-size: 1.2em;
+  }
+  nav .navbar-nav li a {
+    color: black !important;
+  }
   .main {
     height: 100vh;
   }

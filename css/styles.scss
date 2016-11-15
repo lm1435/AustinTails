@@ -46,29 +46,29 @@ $grey: #F8F8F8;
     position: relative;
   }
 
-  .navbar-toggle {
-    background-color: $blue;
-    .icon-bar {
-      background-color: white;
-    }
-  }
-
-  #navbar {
-    &:focus {
+  nav {
+    #navbar {
       background-color: $blue;
+      &:hover {
+        background-color: $blue;
+      }
+      .icon-bar {
+        background-color: white;
+      }
+    }
+    .navbar-nav {
+      margin-bottom: 1em;
+      text-align: center;
+      li {
+        font-size: 1.2em;
+        a {
+          color: black !important;
+        }
+      }
     }
   }
 
-  .navbar-nav {
-    margin-bottom: 1em;
-    text-align: center;
-    li {
-      font-size: 2em;
-    }
-    a {
-      color: black;
-    }
-  }
+
 
   .main {
     background-image: url(../img/small-dog.jpg);
@@ -296,6 +296,42 @@ $grey: #F8F8F8;
 }
 
 @media (min-width: 768px) {
+  nav {
+    .navbar-nav {
+      margin-bottom: 0;
+      li {
+        font-size: 1.2em;
+        a {
+          color: black !important;
+        }
+      }
+    }
+  }
+
+  //
+  // nav {
+  //   #navbar {
+  //     background-color: $blue;
+  //     &:hover {
+  //       background-color: $blue;
+  //     }
+  //     .icon-bar {
+  //       background-color: white;
+  //     }
+  //   }
+  //   .navbar-nav {
+  //     margin-bottom: 1em;
+  //     text-align: center;
+  //     li {
+  //       font-size: 1.2em;
+  //       a {
+  //         color: black;
+  //       }
+  //     }
+  //   }
+  // }
+
+
   .main {
     height: 100vh;
     h1{

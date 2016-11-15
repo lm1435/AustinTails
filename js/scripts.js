@@ -3,7 +3,7 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
-      lat: 30.257927,
+      lat: 30.357927,
       lng: -97.742520
     },
     zoom: 10,
@@ -76,6 +76,10 @@ function initMap() {
         color: '#17263c'
       }]
     }]
+  });
+  var marker = new google.maps.Marker({
+    position: {lat: 30.400664, lng: -97.749035},
+    map: map
   });
 }
 
