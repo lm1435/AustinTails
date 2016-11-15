@@ -60,6 +60,7 @@
     text-align: center;
     padding: 2em 0 2em 0;
     font-family: home;
+    color: #242f3e;
   }
   .personal-color {
     background-color: #F8F8F8;
@@ -208,7 +209,7 @@
   .main {
     height: 90vh;
   }
-  .main h1, .main h2 {
+  .main h1 {
     font-size: 2.5em;
   }
   .larger-box {
@@ -296,7 +297,7 @@
     font-size: 5em;
   }
   .main h2 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
   .larger-box {
     padding: 5em 3em 5em 3em;
@@ -314,12 +315,6 @@
 @media (min-width: 822px) {
   .services h1, .about-us h1, .instagram h1, .contact h1 {
     font-size: 4em;
-  }
-  .larger-box {
-    padding: 8em 6em 8em 6em;
-  }
-  .larger-box img {
-    width: 40%;
   }
   .larger-box .personal {
     width: 30%;
