@@ -46,29 +46,25 @@ $grey: #F8F8F8;
     position: relative;
   }
 
-  nav {
-    #navbar {
+  #navbar {
+    background-color: $blue;
+    &:hover {
       background-color: $blue;
-      &:hover {
-        background-color: $blue;
-      }
-      .icon-bar {
-        background-color: white;
-      }
     }
-    .navbar-nav {
-      margin-bottom: 1em;
-      text-align: center;
-      li {
-        font-size: 1.2em;
-        a {
-          color: black !important;
-        }
+    .icon-bar {
+      background-color: white;
+    }
+  }
+  .navbar-nav {
+    margin-bottom: 1em;
+    text-align: center;
+    li {
+      font-size: 1.2em;
+      a {
+        color: black !important;
       }
     }
   }
-
-
 
   .main {
     background-image: url(../img/small-dog.jpg);
@@ -80,11 +76,10 @@ $grey: #F8F8F8;
     @include flexbox-center;
     margin-top: 50px;
     h1 {
-      // margin-bottom: 1em;
+      font-size: 3em;
     }
     h1, h2 {
       color: white;
-      font-size: 3em;
       font-family: home;
       text-align: center;
     }
@@ -296,41 +291,19 @@ $grey: #F8F8F8;
 }
 
 @media (min-width: 768px) {
-  nav {
-    .navbar-nav {
-      margin-bottom: 0;
-      li {
-        font-size: 1.2em;
-        a {
-          color: black !important;
-        }
+  .navbar-nav li.active > a {
+    background-color: #242f3e !important;
+    color: white !important;
+  }
+  .navbar-nav {
+    margin-bottom: 0;
+    li {
+      font-size: 1.2em;
+      a {
+        color: #242f3e !important;
       }
     }
   }
-
-  //
-  // nav {
-  //   #navbar {
-  //     background-color: $blue;
-  //     &:hover {
-  //       background-color: $blue;
-  //     }
-  //     .icon-bar {
-  //       background-color: white;
-  //     }
-  //   }
-  //   .navbar-nav {
-  //     margin-bottom: 1em;
-  //     text-align: center;
-  //     li {
-  //       font-size: 1.2em;
-  //       a {
-  //         color: black;
-  //       }
-  //     }
-  //   }
-  // }
-
 
   .main {
     height: 100vh;
