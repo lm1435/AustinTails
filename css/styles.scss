@@ -25,6 +25,11 @@ $grey: #F8F8F8;
   src: url(../files/edo.ttf);
 }
 
+@font-face {
+  font-family: normal;
+  src: url(../files/amaranth.otf);
+}
+
 @mixin hr {
   height: 1px;
   width: 5em;
@@ -44,6 +49,7 @@ $grey: #F8F8F8;
 @media (min-width: 320px) {
   body {
     position: relative;
+    font-family: normal !important;
   }
 
   #navbar {
@@ -300,6 +306,10 @@ $grey: #F8F8F8;
         color: #242f3e !important;
       }
     }
+  }
+
+  p {
+    font-size: 1.25em;
   }
 
   .main {

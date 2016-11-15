@@ -3,10 +3,16 @@
   src: url(../files/edo.ttf);
 }
 
+@font-face {
+  font-family: normal;
+  src: url(../files/amaranth.otf);
+}
+
 /*          end of the mixins and variables         */
 @media (min-width: 320px) {
   body {
     position: relative;
+    font-family: normal !important;
   }
   #navbar {
     background-color: #66AFCA;
@@ -289,6 +295,9 @@
   }
   .navbar-nav li a {
     color: #242f3e !important;
+  }
+  p {
+    font-size: 1.25em;
   }
   .main {
     height: 100vh;

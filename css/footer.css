@@ -34,6 +34,7 @@
   color:  #ffffff;
   margin: 20px 0 12px;
   padding: 0;
+  font-size: 1.2em;
 }
 
 .footer-distributed .footer-links a{
@@ -90,7 +91,7 @@
 
 .footer-distributed .footer-center p a{
   color:  #5383d3;
-  text-decoration: none;;
+  text-decoration: none;
 }
 
 
