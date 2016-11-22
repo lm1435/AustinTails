@@ -1,11 +1,11 @@
 @font-face {
-  font-family: home;
-  src: url(../files/edo.ttf);
+  font-family: normal;
+  src: url(../files/amaranth.otf);
 }
 
 @font-face {
-  font-family: normal;
-  src: url(../files/amaranth.otf);
+  font-family: main-text;
+  src: url(../files/madelyn.ttf);
 }
 
 /*          end of the mixins and variables         */
@@ -53,20 +53,24 @@
     margin-top: 50px;
   }
   .main h1 {
-    font-size: 3em;
+    font-size: 5em;
   }
   .main h1, .main h2 {
     color: white;
-    font-family: home;
+    font-family: main-text;
     text-align: center;
+  }
+  .main h2 {
+    font-size: 3em;
   }
   .about-us h1, .instagram h1, .services h1, .contact h1 {
     background-color: #66AFCA;
     margin: 0;
     text-align: center;
-    padding: 2em 0 2em 0;
-    font-family: home;
+    padding: 1em 0 1em 0;
+    font-family: main-text;
     color: #242f3e;
+    font-size: 5em;
   }
   .personal-color {
     background-color: #F8F8F8;
@@ -216,7 +220,10 @@
     height: 90vh;
   }
   .main h1 {
-    font-size: 2.5em;
+    font-size: 5em;
+  }
+  .main h2 {
+    font-size: 4em;
   }
   .larger-box {
     -webkit-justify-content: space-around;
@@ -229,6 +236,9 @@
   }
   .larger-box .personal {
     width: 40%;
+  }
+  .services h1, .about-us h1, .instagram h1, .contact h1 {
+    font-size: 4em;
   }
   .instagram #instafeed {
     padding: .5em .25em .5em .25em;
@@ -263,10 +273,10 @@
     height: 90vh;
   }
   .main h1 {
-    font-size: 3em;
+    font-size: 8em;
   }
   .main h2 {
-    font-size: 2em;
+    font-size: 6em;
   }
   .services .top-row-services {
     margin-top: 4em;
@@ -303,17 +313,16 @@
     height: 100vh;
   }
   .main h1 {
-    font-size: 5em;
+    font-size: 12em;
   }
   .main h2 {
-    font-size: 3.5em;
+    font-size: 6em;
   }
   .larger-box {
     padding: 5em 3em 5em 3em;
   }
   .services h1, .about-us h1, .instagram h1, .contact h1 {
-    font-size: 3em;
-    padding: 2em 0 2em 0;
+    font-size: 5em;
   }
   .contact #map {
     height: 300px;
@@ -323,7 +332,7 @@
 
 @media (min-width: 822px) {
   .services h1, .about-us h1, .instagram h1, .contact h1 {
-    font-size: 4em;
+    font-size: 6em;
   }
   .larger-box .personal {
     width: 30%;
