@@ -72,11 +72,17 @@
     color: #242f3e;
     font-size: 5em;
   }
+  .about-us-info p {
+    margin: auto;
+    padding: 2em 0 2em 0;
+    text-align: center;
+    width: 75%;
+  }
   .personal-color {
-    background-color: #F8F8F8;
+    background-color: #66AFCA;
   }
   .personal-color2 {
-    background-color: #66AFCA;
+    background-color: #F8F8F8;
   }
   .larger-box {
     display: -webkit-flex;
@@ -206,6 +212,20 @@
     border-color: #66AFCA;
     padding: 1em;
     width: 100%;
+  }
+  .logos {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
 }
 

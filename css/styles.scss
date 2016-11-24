@@ -101,12 +101,20 @@ $grey: #F8F8F8;
     font-size: 5em;
   }
 
+  .about-us-info p {
+    margin: auto;
+    padding: 2em 0 2em 0;
+    text-align: center;
+    width: 75%;
+
+  }
+
   .personal-color {
-    background-color: $grey;
+    background-color: $blue;
   }
 
   .personal-color2 {
-    background-color: $blue;
+    background-color: $grey;
   }
 
   .larger-box {
@@ -203,6 +211,13 @@ $grey: #F8F8F8;
 
       }
     }
+  }
+
+  .logos {
+    @include flexbox;
+    @include flex-wrap;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -340,6 +355,7 @@ $grey: #F8F8F8;
   .services h1, .about-us h1, .instagram h1, .contact h1 {
     font-size: 5em;
   }
+
   .contact {
     #map {
       height: 300px;
