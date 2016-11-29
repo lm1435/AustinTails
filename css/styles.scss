@@ -61,6 +61,7 @@ $grey: #F8F8F8;
       background-color: white;
     }
   }
+
   .navbar-nav {
     margin-bottom: 1em;
     text-align: center;
@@ -99,14 +100,15 @@ $grey: #F8F8F8;
     font-family: main-text;
     color: #242f3e;
     font-size: 5em;
+    padding: .5em 0 .3em 0;
+
   }
 
-  .about-us-info p {
+  #more-info {
     margin: auto;
-    padding: 2em 0 2em 0;
+    padding: 1em 0 1em 0;
     text-align: center;
-    width: 75%;
-
+    width: 80%;
   }
 
   .personal-color {
@@ -139,7 +141,6 @@ $grey: #F8F8F8;
       padding: .2em 0 .2em 0;
       img {
         padding: .2em;
-        width: 48vw;
       }
     }
   }
@@ -216,8 +217,16 @@ $grey: #F8F8F8;
   .logos {
     @include flexbox;
     @include flex-wrap;
-    flex-direction: row;
     justify-content: space-around;
+    margin: 8em 0 -2em 0;
+    img {
+      width: 40%;
+    }
+    #thumbtack {
+      @include flexbox;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
@@ -240,9 +249,9 @@ $grey: #F8F8F8;
 
   .larger-box {
     justify-content: space-around;
-    padding: 3em 2em 3em 2em;
+    padding: 2em 2em 2em 2em;
     img {
-      width: 30%;
+      width: 35%;
     }
     .personal {
       width: 40%;
@@ -285,6 +294,13 @@ $grey: #F8F8F8;
           margin-bottom: 1em;
         }
       }
+    }
+  }
+
+  .logos {
+    img {
+      width: auto;
+      margin-bottom: 1em;
     }
   }
 }
@@ -348,8 +364,13 @@ $grey: #F8F8F8;
     }
   }
 
+  #more-info {
+    padding: 3em 0 3em 0;
+    width: 40%;
+  }
+
   .larger-box {
-    padding: 5em 3em 5em 3em;
+    padding: 3em 3em 3em 3em;
   }
 
   .services h1, .about-us h1, .instagram h1, .contact h1 {
@@ -390,6 +411,14 @@ $grey: #F8F8F8;
   .contact {
     .contact-form {
       padding: 5em 0 5em 0;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .larger-box {
+    img {
+      width: 20%;
     }
   }
 }

@@ -71,12 +71,13 @@
     font-family: main-text;
     color: #242f3e;
     font-size: 5em;
+    padding: .5em 0 .3em 0;
   }
-  .about-us-info p {
+  #more-info {
     margin: auto;
-    padding: 2em 0 2em 0;
+    padding: 1em 0 1em 0;
     text-align: center;
-    width: 75%;
+    width: 80%;
   }
   .personal-color {
     background-color: #66AFCA;
@@ -125,7 +126,6 @@
   }
   .instagram #instafeed img {
     padding: .2em;
-    width: 48vw;
   }
   .services .top-row-services {
     display: -webkit-flex;
@@ -220,12 +220,24 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+    margin: 8em 0 -2em 0;
+  }
+  .logos img {
+    width: 40%;
+  }
+  .logos #thumbtack {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -249,10 +261,10 @@
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    padding: 3em 2em 3em 2em;
+    padding: 2em 2em 2em 2em;
   }
   .larger-box img {
-    width: 30%;
+    width: 35%;
   }
   .larger-box .personal {
     width: 40%;
@@ -282,6 +294,10 @@
     width: 40%;
   }
   .contact .contact-form .form input {
+    margin-bottom: 1em;
+  }
+  .logos img {
+    width: auto;
     margin-bottom: 1em;
   }
 }
@@ -338,8 +354,12 @@
   .main h2 {
     font-size: 6em;
   }
+  #more-info {
+    padding: 3em 0 3em 0;
+    width: 40%;
+  }
   .larger-box {
-    padding: 5em 3em 5em 3em;
+    padding: 3em 3em 3em 3em;
   }
   .services h1, .about-us h1, .instagram h1, .contact h1 {
     font-size: 5em;
@@ -369,5 +389,11 @@
   }
   .contact .contact-form {
     padding: 5em 0 5em 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .larger-box img {
+    width: 20%;
   }
 }
