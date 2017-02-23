@@ -14,6 +14,19 @@
     position: relative;
     font-family: normal !important;
   }
+  .plus {
+    font-size: 28px;
+    color: #66AFCA;
+  }
+  .holiday-info p {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  #top-logo {
+    margin-top: -1.2em;
+  }
   #navbar {
     background-color: #66AFCA;
   }
