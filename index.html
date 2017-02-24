@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Texas Tails ATX</title>
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -144,19 +144,22 @@
                     <img src="img/sitting.png" class="img-responsive">
                     <!-- Dog by celine labaume from the Noun Project -->
                     <h2>Cat/Dog Sitting</h2>
+                    <p>
+                      Includes: Love and Affection, Potty Break/Scooping Litter, Feeding, Cleaning Up Pet Area, Changing Water
+                    </p>
                     <hr>
                     <p>
-                        15 minutes = $15 <br>Includes: Love and affection, potty break (if dog), scooping litter, feeding, cleaning up pet area, changing water</p>
+                        15 minutes = $15
+                    </p><br><br>
                     <p>
-                        30 minutes = $20 <br> Includes: Love and affection, potty break (if dog), scooping litter, feeding, cleaning pet area, changing water, brushing if desired, collecting mail, changing lights/blinds </p>
+                        30 minutes = $25 <br><strong class="plus">&#43;</strong><br> Brushing if desired, Collecting Mail, Changing Lights/Blinds
+                    </p><br><br>
                     <p>
-                        45 minutes = $25 <br>Includes: Love and affection, long potty break (if dog), scooping litter, feeding, cleaning pet area, changing water, brushing if desired, collecting mail, changing lights/blinds, watering plants, refill bird
-                        feeder
-                    </p>
+                        45 minutes = $30 <br><strong class="plus">&#43;</strong><br> Watering Plants, Refill Bird Feeder
+                    </p><br><br>
                     <p>
-                        Overnight Typically 7pm-9am but can be discussed = $65<br> Includes: Love and affection, multiple potty breaks and an evening and morning walk, scooping litter, feeding, changing water, collecting mail, taking out trash and bringing
-                        bins in, opening and closing blinds, watering plants, filling bird feeders, and keeping your pet's routine as normal as possible. (ie: if the dog sleeps with you, he will sleep with us, if he is in the crate, he will sleep in the
-                        crate. Our goal is to keep the pet's routine as normal as possible to make them comfortable.)</p>
+                        Overnight Typically 7pm-9am but can be discussed = $65<br><strong class="plus">&#43;</strong><br> Keeping your pet's routine as normal as possible. (ie: if the dog sleeps with you, he will sleep with us, if he is in the crate, he will sleep in the crate.) Our goal is to keep the pet's routine as normal as possible to make them comfortable.
+                   </p><br>
                     <p>
                         Add ons: Some pets have special needs and we are trained in giving shots, Sub-Q fluids and medications. Prices may vary depending on the situation but typically rates are: $5 per administration of Sub-Q fluids $3 per injection (insulin) $2 per administration
                         of oral medication
@@ -235,8 +238,8 @@
               <p>
                 * All prices include up to 2 dogs in the same household, $2 extra charge for additional dogs *<br>
                 Key pick up or drop off: Initial key pick up and drop off is free. Additional special trips to pick up or drop off keys may incur a $5 charge.<br><br>
-                Please book for the Holidays as early as possible. We book Holiday visits on a <strong><em>first-come, first-serve</em></strong> basis. Holiday visits incur an additional $10 fee.
-                Holidays are: New Year’s Eve, New Year’s Day, Easter, Memorial Day, Independence Day, Labor Day, Thanksgiving, Christmas Eve and Christmas Day.
+                Please book for the holidays as early as possible. We book holiday visits on a <strong><em>first-come, first-serve</em></strong> basis. Holiday visits incur an additional $10 fee.<br>
+                Holidays are: New Year’s Eve, New Year’s Day, Easter, Memorial Day, Independence Day, Labor Day, Thanksgiving, Christmas Eve and Christmas Day.<br>
                 We accept Visa, MasterCard, American Express, Discover, Venmo, Square, PayPal, Checks or Cash.
               </p>
             </div>
@@ -249,14 +252,14 @@
                 <div id="map"></div>
                 <div class="form">
                     <form name="form" method="POST" id="contactform">
-                        <input type="hidden" name="_next" value="LINK TO">
-                        <input type="hidden" name="_subject" value="TexasTailsATX contact form">
+                        <input type="hidden" name="_next" value="http://texastailsatx.com">
+                        <input type="hidden" name="_subject" value="TexasTailsATX contactform">
                         <input type="text" name="_gotcha" style="display:none">
-                        <input type="text" minlength="4" placeholder="Your Name" name="name" class="form-control" id="name">
-                        <input required type="email" name="_replyto" minlength="5" placeholder="Your Email" class="form-control" id="email">
-                        <input type="text" minlength="4" placeholder="Your Number" name="Phone Number" class="form-control" id="number">
-                        <input type="text" minlength="4" placeholder="Service You're Interested In" name="Service" class="form-control" id="service">
-                        <textarea style="resize:none" cols="20" rows="5" class="form-control" placeholder="Anything else you'd like us to know?" name="message" id="message-box"></textarea>
+                        <input type="text" minlength="4" maxlength="50" placeholder="Your Name" name="name" class="form-control" id="name">
+                        <input required type="email" name="_replyto" minlength="5" maxlength="30" placeholder="Your Email" class="form-control" id="email">
+                        <input type="text" minlength="4" maxlength="12" placeholder="Your Number" name="Phone Number" class="form-control" id="number">
+                        <input type="text" minlength="4" maxlength="50" placeholder="Service You're Interested In" name="Service" class="form-control" id="service">
+                        <textarea style="resize:none" cols="20" rows="5" class="form-control" placeholder="Anything else you'd like us to know?" name="message" id="message-box" maxlength="300"></textarea>
                         <button type="submit" class="btn btn-success" name="submit" id="submit">Thank You!</button>
                     </form>
                 </div>
@@ -314,9 +317,9 @@
     </script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYseTjRJO4rRgHXICjvx8G8-UcDNnPqs&callback=initMap" async defer>
-    </script>
     <script type="text/javascript" src="js/scripts.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYseTjRJO4rRgHXICjvx8G8-UcDNnPqs&callback=initMap">
     </script>
 </body>
 

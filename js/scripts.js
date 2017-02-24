@@ -126,7 +126,7 @@ $(document).ready(function() {
 
   // formspree protection from spam //
   var contactform = document.getElementById('contactform');
-  contactform.setAttribute('action', 'https://formspree.io/' + 'INSERT-EMAIL');
+  contactform.setAttribute('action', 'https://formspree.io/' + 'info@texastailsatx.com');
 
   //form verification for safari because require doesnt work //
   var forms = document.getElementsByTagName('form');

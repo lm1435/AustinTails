@@ -19,7 +19,7 @@
     color: #66AFCA;
   }
   .holiday-info p {
-    width: 60%;
+    width: 65%;
     margin: auto;
     text-align: center;
     padding-bottom: 2em;
@@ -51,18 +51,19 @@
     background-position: center;
     height: 60vh;
     width: auto;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 50px;
   }
   .main h1 {
@@ -99,15 +100,16 @@
     background-color: #F8F8F8;
   }
   .larger-box {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -123,6 +125,7 @@
     background-color: #F8F8F8;
   }
   .instagram #instafeed {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -130,17 +133,18 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: .2em 0 .2em 0;
   }
   .instagram #instafeed img {
     padding: .2em;
   }
   .services .top-row-services {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -148,8 +152,8 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     margin-top: 2em;
   }
   .services .top-row-services .dog-walking, .services .top-row-services .dog-sitting, .services .top-row-services .cat-sitting {
@@ -166,6 +170,7 @@
     background-color: #000;
   }
   .services .bottom-row-services {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -173,8 +178,8 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     margin-bottom: 2em;
   }
   .services .bottom-row-services .pet-taxi, .services .bottom-row-services .catercise, .services .bottom-row-services .pet-portraits {
@@ -197,6 +202,7 @@
   }
   .contact .contact-form {
     background-color: #F8F8F8;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -204,11 +210,11 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 2em 0 2em 0;
   }
   .contact .contact-form .form {
@@ -227,6 +233,7 @@
     width: 100%;
   }
   .logos {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -234,23 +241,24 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     margin: 8em 0 -2em 0;
   }
   .logos img {
     width: 40%;
   }
   .logos #thumbtack {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -272,8 +280,8 @@
   }
   .larger-box {
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     padding: 2em 2em 2em 2em;
   }
   .larger-box img {
@@ -300,8 +308,8 @@
   }
   .contact .contact-form {
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
   }
   .contact .contact-form .form {
     width: 40%;
