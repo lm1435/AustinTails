@@ -125,20 +125,20 @@ $(document).ready(function() {
   });
 
   // // formspree protection from spam //
-  // var contactform = document.getElementById('contactform');
-  // contactform.setAttribute('action', 'https://formspree.io/' + 'info@texastailsatx.com');
-  //
-  // //form verification for safari because require doesnt work //
-  // var forms = document.getElementsByTagName('form');
-  // for (var i = 0; i < forms.length; i++) {
-  //   forms[i].noValidate = true;
-  //   forms[i].addEventListener('submit', function(event) {
-  //     if (!event.target.checkValidity()) {
-  //       event.preventDefault();
-  //       alert('Please fill out the form. Thank you!');
-  //     }
-  //   }, false);
-  // }
+  var contactform = document.getElementById('contactform');
+  contactform.setAttribute('action', 'https://formspree.io/' + 'info@texastailsatx.com');
+
+  //form verification for safari because require doesnt work //
+  var forms = document.getElementsByTagName('form');
+  for (var i = 0; i < forms.length; i++) {
+    forms[i].noValidate = true;
+    forms[i].addEventListener('submit', function(event) {
+      if (!event.target.checkValidity()) {
+        event.preventDefault();
+        alert('Please fill out the form. Thank you!');
+      }
+    }, false);
+  }
 
   $("body").scrollspy({
     target: ".navbar",
