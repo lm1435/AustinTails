@@ -146,7 +146,7 @@ $grey: #F8F8F8;
     .personal {
       width: 60%;
     }
-    &:last {
+    &:last-of-type {
       margin-bottom: 2em;
     }
   }
@@ -239,7 +239,8 @@ $grey: #F8F8F8;
     justify-content: space-around;
     margin: 8em 0 -2em 0;
     img {
-      width: 40%;
+      width: 55%;
+      margin: 1em auto;
     }
     #thumbtack {
       @include flexbox;
@@ -319,8 +320,8 @@ $grey: #F8F8F8;
   .logos {
     img {
       width: auto;
-      margin-bottom: 1em;
-      height: 70px;
+      margin: 1em 0;
+      height: 100px;
     }
   }
 }

@@ -132,16 +132,16 @@ $(document).ready(function() {
     contactform.setAttribute('action', 'https://formspree.io/' + 'info@texastailsatx.com');
 
     //form verification for safari because require doesnt work //
-    var forms = document.getElementsByTagName('form');
-    for (var i = 0; i < forms.length; i++) {
-      forms[i].noValidate = true;
-      forms[i].addEventListener('submit', function(event) {
-        if (!event.target.checkValidity()) {
-          event.preventDefault();
-          alert('Please fill out the form. Thank you!');
-        }
-      }, false);
-    }
+    // var forms = document.getElementsByTagName('form');
+    // for (var i = 0; i < forms.length; i++) {
+    //   forms[i].noValidate = true;
+    //   forms[i].addEventListener('submit', function(event) {
+    //     if (!event.target.checkValidity()) {
+    //       event.preventDefault();
+    //       alert('Please fill out the form. Thank you!');
+    //     }
+    //   }, false);
+    // }
   })();
 
   $("body").scrollspy({
