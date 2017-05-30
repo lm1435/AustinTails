@@ -1,7 +1,6 @@
   // Map API //
-var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById('map'), {
     center: {
       lat: 30.357927,
       lng: -97.742520
@@ -113,36 +112,40 @@ $(document).ready(function() {
   }
 
   //smooth scrolling//
-  var $root = $('html, body');
-    $('.navbar-nav a').click(function() {
-      var href = $.attr(this, 'href');
-      $root.animate({
-        scrollTop: $(href).offset().top
-    }, 500, function() {
-      window.location.hash = href;
+  (function() {
+    var $root = $('html, body');
+      $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+          scrollTop: $(href).offset().top
+      }, 500, function() {
+        window.location.hash = href;
+      });
+        return false;
     });
-      return false;
-  });
+  })();
+
 
   // // formspree protection from spam //
-  var contactform = document.getElementById('contactform');
-  contactform.setAttribute('action', 'https://formspree.io/' + 'info@texastailsatx.com');
+  (function(){
+    var contactform = document.getElementById('contactform');
+    contactform.setAttribute('action', 'https://formspree.io/' + 'info@texastailsatx.com');
 
-  //form verification for safari because require doesnt work //
-  var forms = document.getElementsByTagName('form');
-  for (var i = 0; i < forms.length; i++) {
-    forms[i].noValidate = true;
-    forms[i].addEventListener('submit', function(event) {
-      if (!event.target.checkValidity()) {
-        event.preventDefault();
-        alert('Please fill out the form. Thank you!');
-      }
-    }, false);
-  }
+    //form verification for safari because require doesnt work //
+    var forms = document.getElementsByTagName('form');
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].noValidate = true;
+      forms[i].addEventListener('submit', function(event) {
+        if (!event.target.checkValidity()) {
+          event.preventDefault();
+          alert('Please fill out the form. Thank you!');
+        }
+      }, false);
+    }
+  })();
 
   $("body").scrollspy({
     target: ".navbar",
     offset: 10
   });
-
 });

@@ -146,6 +146,9 @@ $grey: #F8F8F8;
     .personal {
       width: 60%;
     }
+    &:last {
+      margin-bottom: 2em;
+    }
   }
 
   .instagram {
@@ -317,6 +320,7 @@ $grey: #F8F8F8;
     img {
       width: auto;
       margin-bottom: 1em;
+      height: 70px;
     }
   }
 }
