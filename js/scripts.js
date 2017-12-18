@@ -129,7 +129,7 @@ $(document).ready(function() {
   // // formspree protection from spam //
   (function(){
     var contactform = document.getElementById('contactform');
-    contactform.setAttribute('action', 'https://formspree.io/' + 'info@texastailsatx.com');
+    contactform.setAttribute('action', 'https://formspree.io/' + 'kat@texastailsatx.com');
 
     //form verification for safari because require doesnt work //
     // var forms = document.getElementsByTagName('form');
